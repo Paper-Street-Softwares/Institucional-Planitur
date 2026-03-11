@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, ChevronDown, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import content from "../../content/content";
 
 function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -95,8 +96,8 @@ function Navbar() {
           <div className="w-[45%] tablet2:w-[20%] desktop1ex:w-[20%]">
             <Link to="/">
               <img
-                src="https://miguelneto.com.br/wp-content/uploads/2025/04/MiguelNeto-LogoNegativo-Color-FundoTransparente.png"
-                alt="Miguel Neto Advogados"
+                src={content.texts.navbar.logo.img}
+                alt={content.texts.navbar.logo.alt}
                 className="w-full"
               />
             </Link>
