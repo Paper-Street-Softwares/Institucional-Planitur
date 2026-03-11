@@ -4,6 +4,7 @@ import { ScrollMouse } from "../../../components/animation/MouseScroll";
 import SectionArea from "../../../components/sectionElements/SectionArea";
 import imgAbout from "../../../assets/imgs/about/aboutRouteImg.webp";
 import "../../../styles/ScrollPanelDemo.css";
+import content from "../../../content/content";
 
 function ConteudoAbout({ colorMode }) {
   const boxRef = useRef(null);
@@ -57,13 +58,13 @@ function ConteudoAbout({ colorMode }) {
       <SectionArea>
         <SectionHeaderNovo
           colorMode={colorMode}
-          title="Sobre nós"
+          title="Especialistas em Turismo Sustentável"
           className="mb-4"
         />
 
         <div className="relative w-[90%] max-w-7xl mx-auto flex flex-col tablet2:flex-row gap-14">
           <img
-            src={imgAbout}
+            src={content.texts.about.imagem.img}
             alt="imagem representativa do Consultório"
             className="w-[90%] tablet2:w-[350px] h-fit desktop1:w-[595px] mt-24 phone2:mt-10 tablet2:mt-12 z-10"
           />
@@ -76,25 +77,35 @@ function ConteudoAbout({ colorMode }) {
               className="custom-native-scroll flex-1 tablet2:pt-20"
             >
               <p className="text-justify font-light font-mainFont text-black/70">
-                Fundado em 1990, o Miguel Neto Advogados tem seu foco na atuação
-                abrangente, envolvendo as principais áreas de atendimento ao
-                setor corporativo. Em mais de 34 anos de atividade, é
-                reconhecido nacional e internacionalmente pela capacidade em
-                atender demandas complexas e sofisticadas, sempre zelando pela
-                garantia da segurança jurídica nas soluções que apresenta às
-                empresas dos mais diversos segmentos do mercado.
+                A PLANITUR é uma empresa socioambiental especializada na gestão
+                e no desenvolvimento de projetos em turismo, recreação, uso
+                público em áreas protegidas e desenvolvimento territorial.
+                Atuamos em todo o Brasil conectando pessoas, territórios e
+                natureza para fortalecer destinos e iniciativas que valorizem
+                modos de vida em equilíbrio com a conservação do meio ambiente,
+                com foco em impacto positivo e resultados duradouros.
                 <br />
                 <br />
-                Com solidez e alta expertise de seus profissionais, busca
-                viabilizar os mais variados projetos de seus clientes através de
-                um assessoramento jurídico embasado e focado no negócio.
+                Nosso propósito é fazer do turismo uma ferramenta de
+                transformação socioambiental, capaz de conservar a natureza,
+                valorizar culturas locais, fortalecer identidades e ampliar
+                oportunidades para comunidades e territórios. Acreditamos no
+                turismo como um meio de cuidado com os lugares e com as pessoas
+                que os habitam.
                 <br />
                 <br />
-                Somos famosos por tornarmos parceiros diretos dos negócios
-                assessorados, atuando para construir relações de confiança.
+                Entregamos soluções que unem rigor técnico, sensibilidade
+                territorial e diálogo com os atores locais, orientadas por
+                processos participativos e pela construção de legados que
+                permanecem além dos projetos.
                 <br />
                 <br />
-                Este é o Miguel Neto Advogados: compromisso com o cliente.
+                Atuamos com consultoria, assessoria, planejamento, curadoria,
+                pesquisa, instrutoria e capacitações, além do desenvolvimento e
+                implementação de projetos voltados ao turismo responsável e
+                sustentável. Também apoiamos instituições na estruturação de
+                propostas e captação de recursos, transformando boas ideias em
+                projetos viáveis e financiáveis.
               </p>
             </div>
 

@@ -2,14 +2,20 @@ import logo from "../assets/imgs/logo/logo.webp";
 import logoDesktop from "../assets/imgs/logo/logoDesktop.webp";
 import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
 import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
+import bgHero from "../assets/imgs/hero/bgHero.webp";
+import imgApresentation from "../assets/imgs/apresentation/imgApresentation.webp";
 
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
-
+// import team1 from '../assets/imgs/team/team1.webp'
+// import team2 from '../assets/imgs/team/team2.webp'
 // import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
+// import logo1 from '../assets/imgs/parceria/Logo1.webp'
+// import logo2 from '../assets/imgs/parceria/Logo2.webp'
+// import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
 import {
   Baby,
@@ -39,32 +45,32 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Planitur Consultoria e Planejamento Turístico",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "planiturconsultoria.com", // Sem "www"
   phone: {
-    ddd: "11",
-    firstPart: "5502", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "1200", // Apenas os 4 últimos números
+    ddd: "51",
+    firstPart: "98225", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "1864", // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "21",
+    firstPart: "98385", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "6516", // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "51",
+    firstPart: "98225", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "1864", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Rua Fidêncio Ramos, 308</p>
-      <p>2º Andar - Torre A - Vila Olímpia</p>
-      <p>CEP 04551-010 - São Paulo - SP</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -82,10 +88,10 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "miguel_neto_advogados", // Sem o @
+  instagramProfile: "planiturconsultoria", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
-  linkeDinProfile: "miguel-neto-advogados-associados",
+  linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
   youtubeProfile: "",
@@ -124,14 +130,17 @@ const content = {
         </>
       ),
       miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      FirstPart: <span>Turismo que </span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">
+          conecta pessoas,
+        </span>
       ),
-      SecondPart: <span></span>,
+      SecondPart: <span>território e natureza</span>,
       subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
+      heroBg: bgHero,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
@@ -182,7 +191,7 @@ const content = {
     },
     features: {
       miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      FirstPart: <span>Planejamento estratégico para destinos turísticos</span>,
       Destaque: <span className="italic font-light">A_Definir</span>,
       SecondPart: <span></span>,
       subtitle: <>A_Definir</>,
@@ -321,6 +330,13 @@ const content = {
       },
       ctaButtonText: <>A_Definir</>,
     },
+    apresentation: {
+      minitag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      img: imgApresentation,
+      text: <></>,
+    },
     cardsSection: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -372,11 +388,19 @@ const content = {
         alt: "Imagem ilustrativa da Seção Sobre",
       },
       miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
+      FirstPart: (
+        <span> Planejamento estratégico para destinos turísticos </span>
+      ),
       Destaque: <span className="italic font-light"> A_Definir</span>,
       SecondPart: <span></span>,
       subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      paragraph: (
+        <div>
+          A premissa do turismo quando bem planejado transforma realidades, é o
+          que nos move. Partimos da força dos territórios, das pessoas e dos
+          saberes locais para construir soluções colaborativas e sustentáveis.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
@@ -1183,7 +1207,7 @@ const content = {
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       facebook: `https://www.facebook.com/${infos.facebookProfile}`,
       x: `https://x.com/${infos.x}`,
-      linkedin: `https://www.linkedin.com/company/${infos.linkeDinProfile}`,
+      linkedin: `https://www.linkedin.com/in/${infos.linkeDinProfile}`,
       tiktok: `https://www.tiktok.com/@${infos.tiktokProfile}/`,
       youtube: `https://www.youtube.com/@${infos.youtubeProfile}/`,
     },

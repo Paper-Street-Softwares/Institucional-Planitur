@@ -11,7 +11,7 @@ export default function Footer() {
           {/* COLUNA 1 - LOGO */}
           <div className="flex self-start tablet2:self-center">
             <img
-              src="https://miguelneto.com.br/wp-content/uploads/2025/04/MiguelNeto-LogoNegativo-Color-FundoTransparente.png"
+              src={content.texts.navbar.logo.img}
               alt="Miguel Neto Advogados"
               className="w-[220px]"
             />
@@ -30,13 +30,13 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div>
+            {/* <div>
               <h3 className="text-primaryLight font-semibold mb-3">
                 ADVOGADOS
               </h3>
-            </div>
+            </div> */}
 
-            <div>
+            {/* <div>
               <h3 className="text-primaryLight font-semibold mb-3">
                 NOTÍCIAS E PUBLICAÇÕES
               </h3>
@@ -46,11 +46,11 @@ export default function Footer() {
                 <li>Reconhecimentos</li>
                 <li>Eventos</li>
               </ul>
-            </div>
+            </div> */}
 
-            <div>
+            {/* <div>
               <h3 className="text-primaryLight font-semibold">TRACK RECORD</h3>
-            </div>
+            </div> */}
           </div>
 
           {/* COLUNA 3 - ÁREAS DE ATUAÇÃO */}
@@ -80,12 +80,28 @@ export default function Footer() {
           {/* COLUNA 4 - CONTATO */}
           <div className="flex flex-col justify-between text-sm">
             <div className="space-y-24">
-              <div className="flex items-center gap-3">
-                <Phone size={18} className="text-primaryLight" />
-                <span>+55 (11) 5502-1200</span>
+              <div className="flex flex-col space-y-6">
+                <div className="flex items-center gap-3">
+                  <Phone size={18} className="text-primaryLight" />
+                  <span>{content.texts.infos.phone} - Planitur</span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <Phone size={18} className="text-primaryLight" />
+                  <span>
+                    {content.texts.infos.phoneSecundario} - Tarcísio Cunha
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <Phone size={18} className="text-primaryLight" />
+                  <span>
+                    {content.texts.infos.phoneTerciario} - Angelice Motter
+                  </span>
+                </div>
               </div>
 
-              <div className="flex items-start gap-3">
+              {/* <div className="flex items-start gap-3">
                 <MapPin size={18} className="mt-1 text-primaryLight" />
                 <p className="text-gray-300">
                   Rua Fidêncio Ramos, 308
@@ -94,16 +110,16 @@ export default function Footer() {
                   <br />
                   CEP 04551-010 - São Paulo - SP
                 </p>
-              </div>
+              </div> */}
 
               <div className="flex gap-4 pt-2">
                 <a href={content.texts.links.instagram} target="_blank">
                   {" "}
                   <Instagram width={18} className="text-white/70" />
                 </a>
-                <a href={content.texts.links.linkedin} target="_blank">
+                {/* <a href={content.texts.links.linkedin} target="_blank">
                   <Linkedin width={18} className="text-white/70" />
-                </a>
+                </a> */}
               </div>
             </div>
 
