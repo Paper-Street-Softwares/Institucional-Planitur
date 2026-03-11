@@ -49,6 +49,7 @@ import About from "./Institucional/About";
 import Reconhecimentos from "./Institucional/Reconhecimentos";
 import TeamSection from "./Institucional/Team";
 import Footer from "./Institucional/Footer";
+import Apresentation from "./Institucional/Apresentation";
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode();
@@ -58,10 +59,11 @@ export default function Index() {
       <ColorModeProvider>
         <Navbar />
         <Hero />
-        <News colorMode={colorMode} />
+        {/* <Apresentation /> */}
+        {/* <News colorMode={colorMode} /> */}
         <About colorMode={colorMode} />
-        <Reconhecimentos colorMode={colorMode} />
-        <TeamSection colorMode={colorMode} />
+        {/* <Reconhecimentos colorMode={colorMode} /> */}
+        {/* <TeamSection colorMode={colorMode} /> */}
         <Footer />
 
         {/* Render imediato */}

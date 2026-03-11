@@ -4,6 +4,7 @@ import SectionWrapper from "../../components/sectionElements/SectionWrapper";
 import { motion } from "framer-motion";
 import { Button } from "@mui/material";
 import { ScrollMouse } from "../../components/animation/MouseScroll";
+import content from "../../content/content";
 
 function Hero() {
   return (
@@ -15,7 +16,7 @@ function Hero() {
         <div className="absolute inset-0 z-0">
           {" "}
           <img
-            src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80"
+          src={content.texts.hero.heroBg}
             alt="Cityscape"
             className="w-full h-full object-cover"
           />
@@ -30,11 +31,11 @@ function Hero() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="w-fit mx-auto text-[29px] desktop2:text-[50px] font-mainFont font-light text-[#ECDDC6] leading-8 desktop1:leading-[60px] drop-shadow-lg">
-              ADVOCACIA
+              {content.texts.hero.FirstPart}
               <br />
-              FOCADA NO
+              {content.texts.hero.Destaque}
               <br />
-              SEU NEGÓCIO
+              {content.texts.hero.SecondPart}
             </h1>
           </motion.div>
         </div>

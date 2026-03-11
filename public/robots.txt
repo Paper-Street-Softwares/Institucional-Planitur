@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://trabalhista-drgleiton.advespecialista.adv.br/sitemap.xml
+Sitemap: https://www.planiturconsultoria.com/sitemap.xml
