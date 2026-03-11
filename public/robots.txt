@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://trabalhista-drgleiton.advespecialista.adv.br/sitemap.xml

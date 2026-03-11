@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.unfix-ios-bg {
+  @supports (-webkit-touch-callout: none) {
+    background-attachment: initial !important;
+  }
+}
+
+/* Não remover este item abaixo pois ele faz com que as seções possam alternar */
+:root {
+  --primaryDark: theme(colors.primaryDark);
+}
+/* Não remover este item acima pois ele faz com que as seções possam alternar */
+
+/* container dos bullets */
+ul.p-carousel-indicators {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* bullet INATIVO */
+ul.p-carousel-indicators > li.p-carousel-indicator > button {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background-color: #07202d;
+  opacity: 0.5;
+  border: none;
+  padding: 0;
+}
+
+/* bullet ATIVO */
+ul.p-carousel-indicators > li.p-carousel-indicator.p-highlight > button {
+  background-color: #c03d1a;
+  opacity: 1;
+}
