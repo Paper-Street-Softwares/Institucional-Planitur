@@ -3,15 +3,15 @@ import SectionArea from "../../../components/sectionElements/SectionArea";
 import SectionHeaderNovo from "../../../components/sectionElements/SectionHeaderNovo";
 import { ScrollMouse } from "../../../components/animation/MouseScroll";
 import TeamMember from "../../../components/cards/TeamMember";
-import bgImg from "../../../assets/imgs/features/rotas/featureAmbiental.webp";
+import content from "../../../content/content";
 
-function FeaturesAmbiental({ colorMode }) {
+function Features1({ colorMode }) {
   return (
-    <div id="ambiental">
+    <div id="tecnicocursivo">
       <section className="relative h-[63vh] phone2:h-[60vh] phone3:h-[65vh] tablet1:h-[68vh] tablet2:h-[73vh] desktop1:h-[56vh] flex flex-col items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <img
-            src={bgImg}
+            src={content.texts.features.cards.card1.imgFeatures1}
             alt="Cityscape"
             className="w-full h-full object-cover"
           />
@@ -27,37 +27,16 @@ function FeaturesAmbiental({ colorMode }) {
       <SectionArea>
         <SectionHeaderNovo
           colorMode={colorMode}
-          title="Ambiental, ESG e Energia"
+          title={content.texts.features.cards.card1.title}
           className="mb-4"
         />
 
         <div className="w-full">
           <p className="text-corOutrosTextosPreto/80 mx-auto w-[90%] text-justify max-w-[800px] mb-24 font-mainFont">
-            A crescente ênfase na sustentabilidade e na responsabilidade
-            ambiental exige que empresas de diversos setores adotem práticas que
-            atendam tanto às normativas aplicáveis quanto às melhores
-            estratégias de mercado. A incorporação de diretrizes ambientais,
-            sociais e de governança tornou-se indispensável para mitigar riscos,
-            atrair investimentos e consolidar negócios sustentáveis e
-            resilientes.
-            <br />
-            <br />
-            Nossa equipe assessora empresas na adequação às exigências
-            ambientais, na estruturação e aprimoramento de políticas ESG e na
-            viabilização de projetos no setor de energia, com especial foco em
-            fontes renováveis. Atuamos na gestão e prevenção de passivos
-            ambientais, no suporte a auditorias e due diligence, na obtenção de
-            licenças e autorizações e na elaboração de pareceres que
-            proporcionam segurança jurídica às operações empresariais.
-            <br />
-            <br />
-            Com uma abordagem estratégica e integrada, auxiliamos empresas na
-            adoção de práticas que promovem a sustentabilidade corporativa,
-            fortalecem a governança e agregam valor aos negócios em um mercado
-            cada vez mais competitivo e dinâmico.
+            {content.texts.features.cards.card1.description}
           </p>
 
-          <hr className=" max-w-[1200px] mx-auto" />
+          {/* <hr className=" max-w-[1200px] mx-auto" />
 
           <div className="mt-16 max-w-[1170px] mx-auto">
             <SectionHeaderNovo
@@ -82,11 +61,11 @@ function FeaturesAmbiental({ colorMode }) {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </SectionArea>
     </div>
   );
 }
 
-export default FeaturesAmbiental;
+export default Features1;

@@ -58,22 +58,31 @@ export default function Footer() {
             <h3 className="text-primaryLight font-semibold mb-4">
               ÁREAS DE ATUAÇÃO
             </h3>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li>Ambiental, ESG e Energia</li>
-              <li>Compliance e Investigações Corporativas</li>
-              <li>Concorrencial</li>
-              <li>Contencioso e Arbitragem</li>
-              <li>Contratos e Negociações Empresariais</li>
-              <li>Empresarial e Societário</li>
-              <li>Família e Sucessões</li>
-              <li>Fusões e Aquisições (M&A)</li>
-              <li>Imobiliário</li>
-              <li>Mercado de Capitais</li>
-              <li>Planejamento Patrimonial</li>
-              <li>Privacidade e Proteção de Dados</li>
-              <li>Setores Regulados</li>
-              <li>Tributário</li>
-              <li>Trabalhista e Previdenciário</li>
+            <ul className="space-y-2 text-sm text-gray-300 flex flex-col">
+              <a
+                href="/features/tecnicocursivo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primaryLight duration-300 transition-all cursor-pointer"
+              >
+                Ambiental, ESG e Energia
+              </a>
+              <a
+                href="/features/formativoeducacional"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primaryLight duration-300 transition-all cursor-pointer"
+              >
+                Compliance e Investigações Corporativas
+              </a>
+              <a
+                href="/features/pesquisaeproducaodeconhecimento"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primaryLight duration-300 transition-all cursor-pointer"
+              >
+                Concorrencial
+              </a>
             </ul>
           </div>
 
@@ -117,14 +126,14 @@ export default function Footer() {
                   {" "}
                   <Instagram width={18} className="text-white/70" />
                 </a>
-                {/* <a href={content.texts.links.linkedin} target="_blank">
+                <a href={content.texts.links.linkedin} target="_blank">
                   <Linkedin width={18} className="text-white/70" />
-                </a> */}
+                </a>
               </div>
             </div>
 
             <div className="text-xs text-gray-400 tablet2:mt-[82px]">
-              © 2025 Miguel Neto Advogados. Todos os direitos reservados.
+              ©{content.texts.footer.copyrightLine}
             </div>
           </div>
         </div>

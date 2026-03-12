@@ -8,15 +8,20 @@ import imgApresentation from "../assets/imgs/apresentation/imgApresentation.webp
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
-// import team1 from '../assets/imgs/team/team1.webp'
-// import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
+import aboutImgBg from "../assets/imgs/about/rotaAbout/bgAbout.webp";
+import team1 from "../assets/imgs/team/img1.webp";
+import team2 from "../assets/imgs/team/img2.webp";
+import parceiros from "../assets/imgs/team/parceiros.webp";
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo1 from '../assets/imgs/parceria/Logo1.webp'
 // import logo2 from '../assets/imgs/parceria/Logo2.webp'
 // import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
+import imgFeatures1 from "../assets/imgs/features/rotas/features1.webp";
+import imgFeatures2 from "../assets/imgs/features/rotas/features2.webp";
+import imgFeatures3 from "../assets/imgs/features/rotas/features3.webp";
 import {
   Baby,
   Briefcase,
@@ -40,7 +45,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-import { FileText } from "lucide-react";
+import imgBgTeam from "../assets/imgs/team/bgImgTeam.webp";
 
 const currentYear = new Date().getFullYear();
 
@@ -91,7 +96,7 @@ export const infos = {
   instagramProfile: "planiturconsultoria", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
-  linkeDinProfile: "",
+  linkeDinProfile: "planitur",
   x: "",
   tiktokProfile: "",
   youtubeProfile: "",
@@ -201,14 +206,15 @@ const content = {
       subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
+          title: <>Técnico-Consultivo</>,
           subtitle: <>A_Definir</>,
+          imgFeatures1: imgFeatures1,
           description: (
             <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
+              Apresentam soluções estratégicas para apoiar decisões, estruturar
+              iniciativas e fortalecer territórios, são produtos resultantes
+              desse eixo, diagnósticos, estruturação de políticas públicas,
+              planejamento estratégico e territorial, entre outros.
             </div>
           ),
           icon: <Briefcase />,
@@ -217,14 +223,14 @@ const content = {
         },
 
         card2: {
-          title: <>A_Definir</>,
+          title: <>Formativo e Educacional</>,
           subtitle: <>A_Definir</>,
+          imgFeatures2: imgFeatures2,
           description: (
             <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
+              Desenvolvimento de competências e qualificações de pessoas,
+              empresários, gestores, equipes, instituições e comunidades, por
+              meio de cursos, oficinas e processos formativos.
             </div>
           ),
           icon: <User />,
@@ -233,14 +239,15 @@ const content = {
         },
 
         card3: {
-          title: <>A_Definir</>,
+          title: <>Pesquisa e Produção de Conhecimento</>,
           subtitle: <>A_Definir</>,
+          imgFeatures3: imgFeatures3,
+
           description: (
             <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
+              Investigação aplicada para qualificar decisões, políticas e
+              projetos através do desenvolvimento de estudos, sistematizações,
+              indicadores e produção técnica.
             </div>
           ),
           icon: <Scale />,
@@ -331,9 +338,16 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     apresentation: {
-      minitag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      minitag: <></>,
+      title: <>Planejamento estratégico para destinos turísticos</>,
+      subtitle: (
+        <>
+          {" "}
+          A premissa do turismo quando bem planejado transforma realidades, é o
+          que nos move. Partimos da força dos territórios, das pessoas e dos
+          saberes locais para construir soluções colaborativas e sustentáveis.
+        </>
+      ),
       img: imgApresentation,
       text: <></>,
     },
@@ -388,19 +402,12 @@ const content = {
         alt: "Imagem ilustrativa da Seção Sobre",
       },
       miniTag: <>A_Definir</>,
-      FirstPart: (
-        <span> Planejamento estratégico para destinos turísticos </span>
-      ),
+      FirstPart: <span> </span>,
       Destaque: <span className="italic font-light"> A_Definir</span>,
       SecondPart: <span></span>,
       subtitle: <></>,
-      paragraph: (
-        <div>
-          A premissa do turismo quando bem planejado transforma realidades, é o
-          que nos move. Partimos da força dos territórios, das pessoas e dos
-          saberes locais para construir soluções colaborativas e sustentáveis.
-        </div>
-      ),
+      paragraph: <div></div>,
+      imagemBg: aboutImgBg,
       benefits: {
         cards: {
           card1: {
@@ -444,23 +451,23 @@ const content = {
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
 
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: "Siga-nos no Instagram",
-      //   labelFacebook: "Siga-nos no Facebook",
-      //   labelLinkedin: "Siga-nos no LinkedIn",
-      //   labelX: "Siga-nos no X",
-      //   labelTiktok: "Siga-nos no Tik Tok",
-      //   labelYoutube: "Siga-nos no Youtube",
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+        },
+        miniTag: <>A_Definir</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: <>A_Definir</>,
+        paragraph: <p></p>,
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
+      },
     },
     ctaSection: {
       miniTag: <>A_Definir</>,
@@ -614,6 +621,56 @@ const content = {
         },
       },
       ctaButtonText: <>A_Definir</>,
+    },
+    team: {
+      miniTag: <>A_Definir</>,
+      title: <>Nosso time</>,
+      subtitle: <>Especialistas em planejamento turístico</>,
+      imgFundo: imgBgTeam,
+      cards: {
+        card1: {
+          img: team1,
+          name: (
+            <>
+              Angelice Motter - Líder Administrativo <br />e Coordenadora de
+              Projetos
+            </>
+          ),
+          description: (
+            <>
+              Mestre em Turismo e Hotelaria (2025), pós-graduada em Ecoturismo e
+              Interpretação da Natureza (2025) e graduada em Turismo pela
+              Universidade Federal do Rio Grande (2022). Sua trajetória
+              acadêmica e profissional concentra-se nos temas de planejamento e
+              gestão do turismo, políticas públicas, governança,
+              sustentabilidade e turismo de natureza.
+            </>
+          ),
+          linkedIn:
+            "https://www.linkedin.com/in/angelice-raquel-motter-manzino-a261b2217/",
+        },
+        card2: {
+          img: team2,
+          name: <>Tarcísio Cunha - Líder de Projetos</>,
+          description: (
+            <>
+              Doutorando em Políticas Públicas, Estratégias e Desenvolvimento
+              pela Universidade Federal do Rio de Janeiro (UFRJ), Mestre em
+              Ecoturismo e Conservação pela Universidade Federal do Estado do
+              Rio de Janeiro (UNIRIO), Especialista em Gestão e Governança de
+              Áreas Marinhas Protegidas pela Universidad Austral de Chile (UACh)
+              e bacharel em Turismo pela Universidade Federal Rural do Rio de
+              Janeiro (UFRRJ). Atua há mais de 10 anos com turismo baseado na
+              natureza. Membro da Comissão Mundial de Áreas Protegidas e do
+              Grupo de Especialistas em Turismo e Áreas Protegidas da União
+              Internacional para a Conservação da Natureza (IUCN).
+            </>
+          ),
+          linkedIn: "https://www.linkedin.com/in/tarcisio-cunha/",
+        },
+      },
+      titleParceiros: <>Colaboração que gera resultados</>,
+      paceiros: parceiros,
     },
     faq: {
       miniTag: <>A_Definir</>,
@@ -1207,7 +1264,7 @@ const content = {
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       facebook: `https://www.facebook.com/${infos.facebookProfile}`,
       x: `https://x.com/${infos.x}`,
-      linkedin: `https://www.linkedin.com/in/${infos.linkeDinProfile}`,
+      linkedin: `https://www.linkedin.com/company/${infos.linkeDinProfile}`,
       tiktok: `https://www.tiktok.com/@${infos.tiktokProfile}/`,
       youtube: `https://www.youtube.com/@${infos.youtubeProfile}/`,
     },

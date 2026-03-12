@@ -78,9 +78,9 @@ function SocialMediaTemplate({ colorMode }) {
             {/* Cabeçalho */}
 
             <SectionHeaderNovo
-              miniTitle={content.texts.about.aboutSocial.miniTag}
+              // miniTitle={content.texts.about.aboutSocial.miniTag}
               title={content.texts.about.aboutSocial.title}
-              subtitle={content.texts.about.aboutSocial.subtitle}
+              // subtitle={content.texts.about.aboutSocial.subtitle}
               colorMode={colorMode}
             />
 

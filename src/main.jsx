@@ -18,9 +18,9 @@ import GlobalClickEvent from "./context/GlobalClickEvent.jsx";
 import RouteAbout from "./pages/Rotas/about/RouteAbout.jsx";
 import { color } from "framer-motion";
 import RoutesFeatures from "./pages/Rotas/features/RoutesFeatures.jsx";
-import FeaturesAmbiental from "./pages/Rotas/features/FeatutesAmbiental.jsx";
-import FeaturesCompliance from "./pages/Rotas/features/FeaturesCompliance.jsx";
-import FeaturesConcorrencial from "./pages/Rotas/features/FeaturesConcorrencial.jsx";
+import Features1 from "./pages/Rotas/features/Features1.jsx";
+import Features2 from "./pages/Rotas/features/Features2.jsx";
+import Features3 from "./pages/Rotas/features/Features3.jsx";
 import FeaturesContencioso from "./pages/Rotas/features/FeaturesContencioso.jsx";
 import RouteContato from "./pages/Rotas/contato/RouteContato.jsx";
 import RouteTeam from "./pages/Rotas/team/RouteTeam.jsx";
@@ -39,11 +39,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/team" element={<RouteTeam colorMode={mode} />} />
 
         <Route path="/features" element={<RoutesFeatures />}>
-          <Route index element={<FeaturesAmbiental />} />
-          <Route path="ambiental" element={<FeaturesAmbiental />} />
-          <Route path="compliance" element={<FeaturesCompliance />} />
-          <Route path="concorrencial" element={<FeaturesConcorrencial />} />
-          <Route path="contencioso" element={<FeaturesContencioso />} />
+          <Route index element={<Features1 />} />
+          <Route path="tecnicocursivo" element={<Features1 />} />
+          <Route path="formativoeducacional" element={<Features2 />} />
+          <Route
+            path="pesquisaeproducaodeconhecimento"
+            element={<Features3 />}
+          />
+          {/* <Route path="contencioso" element={<FeaturesContencioso />} /> */}
         </Route>
       </Routes>
     </Router>

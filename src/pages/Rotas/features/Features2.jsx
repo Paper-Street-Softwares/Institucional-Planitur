@@ -3,15 +3,15 @@ import SectionArea from "../../../components/sectionElements/SectionArea";
 import SectionHeaderNovo from "../../../components/sectionElements/SectionHeaderNovo";
 import { ScrollMouse } from "../../../components/animation/MouseScroll";
 import TeamMember from "../../../components/cards/TeamMember";
-import bgImg from "../../../assets/imgs/features/rotas/featureConcorrencial.webp";
+import content from "../../../content/content";
 
-function FeaturesConcorrencial({ colorMode }) {
+function Features2({ colorMode }) {
   return (
-    <div id="concorrencial">
+    <div id="formativoeducacional">
       <section className="relative h-[63vh] phone2:h-[60vh] phone3:h-[65vh] tablet1:h-[68vh] tablet2:h-[73vh] desktop1:h-[56vh] flex flex-col items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <img
-            src={bgImg}
+            src={content.texts.features.cards.card2.imgFeatures2}
             alt="Cityscape"
             className="w-full h-full object-cover"
           />
@@ -27,39 +27,16 @@ function FeaturesConcorrencial({ colorMode }) {
       <SectionArea>
         <SectionHeaderNovo
           colorMode={colorMode}
-          title="Concorrencial"
+          title={content.texts.features.cards.card2.title}
           className="mb-4"
         />
 
         <div className="w-full">
           <p className="text-corOutrosTextosPreto/80 mx-auto w-[90%] text-justify max-w-[800px] mb-24 font-mainFont">
-            Assessoramos empresas em questões concorrenciais estratégicas,
-            representando clientes em negociações de acordos e em processos
-            administrativos perante o Conselho Administrativo de Defesa
-            Econômica (CADE). Nossa atuação abrange desde a prevenção e
-            mitigação de riscos antitruste até a defesa em investigações e
-            litígios regulatórios.
-            <br />
-            <br />
-            Em operações de M&A, conduzimos a análise e submissão de atos de
-            concentração ao CADE, inclusive em casos complexos com repercussão
-            internacional. Nossa experiência permite desenvolver estratégias que
-            garantem a conformidade regulatória e promovem a eficiência na
-            tramitação dos processos.
-            <br />
-            <br />
-            Além disso, auxiliamos empresas na avaliação de riscos
-            concorrenciais, na estruturação de políticas internas e na revisão
-            de contratos, assegurando que suas práticas comerciais estejam
-            alinhadas às normas de defesa da concorrência e mitigando potenciais
-            infrações.
-            <br />
-            <br /> Nosso compromisso é oferecer soluções jurídicas assertivas e
-            inovadoras, protegendo os interesses dos nossos clientes em um
-            ambiente regulatório cada vez mais desafiador.
+            {content.texts.features.cards.card2.description}
           </p>
 
-          <hr className=" max-w-[1200px] mx-auto" />
+          {/* <hr className=" max-w-[1200px] mx-auto" />
 
           <div className="mt-16 max-w-[1170px] mx-auto">
             <SectionHeaderNovo
@@ -84,11 +61,11 @@ function FeaturesConcorrencial({ colorMode }) {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </SectionArea>
     </div>
   );
 }
 
-export default FeaturesConcorrencial;
+export default Features2;

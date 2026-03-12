@@ -3,15 +3,15 @@ import SectionArea from "../../../components/sectionElements/SectionArea";
 import SectionHeaderNovo from "../../../components/sectionElements/SectionHeaderNovo";
 import { ScrollMouse } from "../../../components/animation/MouseScroll";
 import TeamMember from "../../../components/cards/TeamMember";
-import bgImg from "../../../assets/imgs/features/rotas/featureCompliance.webp";
+import content from "../../../content/content";
 
-function FeaturesCompliance({ colorMode }) {
+function Features3({ colorMode }) {
   return (
-    <div id="compliance">
+    <div id="pesquisaeproducaodeconhecimento">
       <section className="relative h-[63vh] phone2:h-[60vh] phone3:h-[65vh] tablet1:h-[68vh] tablet2:h-[73vh] desktop1:h-[56vh] flex flex-col items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <img
-            src={bgImg}
+            src={content.texts.features.cards.card3.imgFeatures3}
             alt="Cityscape"
             className="w-full h-full object-cover"
           />
@@ -27,39 +27,16 @@ function FeaturesCompliance({ colorMode }) {
       <SectionArea>
         <SectionHeaderNovo
           colorMode={colorMode}
-          title="Compliance e Investigações Corporativas"
+          title={content.texts.features.cards.card3.title}
           className="mb-4"
         />
 
         <div className="w-full">
           <p className="text-corOutrosTextosPreto/80 mx-auto w-[90%] text-justify max-w-[800px] mb-24 font-mainFont">
-            A área de Compliance e Investigações Corporativas do Miguel Neto
-            Advogados assegura que empresas estejam em conformidade com leis,
-            regulamentos, normas internas e princípios éticos, prevenindo e
-            detectando atividades ilegais ou antiéticas. Em um ambiente de
-            negócios cada vez mais complexo, essas medidas são essenciais para
-            mitigar riscos legais e reputacionais.
-            <br />
-            <br />
-            Nossa atuação em Compliance envolve o desenvolvimento, implementação
-            e monitoramento de políticas e controles internos para garantir que
-            as empresas cumpram todas as obrigações legais e regulatórias,
-            reduzindo a exposição a sanções e litígios.
-            <br />
-            <br />
-            No âmbito das Investigações Corporativas, conduzimos apurações
-            detalhadas sobre suspeitas de fraude, corrupção, lavagem de
-            dinheiro, assédio e outras violações, utilizando análise documental,
-            entrevistas e elaboração de relatórios estratégicos para recomendar
-            medidas corretivas e ações disciplinares.
-            <br />
-            <br /> Além de proteger a integridade organizacional, essas
-            iniciativas fortalecem a cultura ética e a confiança de clientes,
-            investidores e reguladores, demonstrando o compromisso da empresa
-            com a transparência e a governança responsável.
+            {content.texts.features.cards.card3.description}
           </p>
 
-          <hr className=" max-w-[1200px] mx-auto" />
+          {/* <hr className=" max-w-[1200px] mx-auto" />
 
           <div className="mt-16 max-w-[1170px] mx-auto">
             <SectionHeaderNovo
@@ -84,11 +61,11 @@ function FeaturesCompliance({ colorMode }) {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </SectionArea>
     </div>
   );
 }
 
-export default FeaturesCompliance;
+export default Features3;

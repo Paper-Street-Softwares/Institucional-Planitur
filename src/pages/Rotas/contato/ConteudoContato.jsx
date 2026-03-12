@@ -23,105 +23,105 @@ function Contato({ colorMode }) {
           <Phone width={20} />
         </>
       ),
-      text: "+55 (11) 5502-1200",
+      text: "51 98225-1864",
     },
-    link2: {
-      icon: (
-        <>
-          <SearchCheck width={20} />
-        </>
-      ),
-      text: (
-        <>
-          Rua Fidêncio Ramos, 308 <br />
-          2º andar - Torre A - Vila Olímpia <br />
-          CEP 04551-010 - São Paulo - SP
-        </>
-      ),
-    },
-    link3: {
-      icon: (
-        <>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-id-card-lanyard-icon lucide-id-card-lanyard"
-          >
-            <path d="M13.5 8h-3" />
-            <path d="m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" />
-            <path d="M16.899 22A5 5 0 0 0 7.1 22" />
-            <path d="m9 2 3 6" />
-            <circle cx="12" cy="15" r="3" />
-          </svg>
-        </>
-      ),
-      text: "Mauricio Khalil",
-    },
-    link4: {
-      icon: (
-        <>
-          <Phone width={20} />
-        </>
-      ),
-      text: "+55 (11) 99291-2709",
-    },
+    // link2: {
+    //   icon: (
+    //     <>
+    //       <SearchCheck width={20} />
+    //     </>
+    //   ),
+    //   text: (
+    //     <>
+    //       Rua Fidêncio Ramos, 308 <br />
+    //       2º andar - Torre A - Vila Olímpia <br />
+    //       CEP 04551-010 - São Paulo - SP
+    //     </>
+    //   ),
+    // },
+    // link3: {
+    //   icon: (
+    //     <>
+    //       <svg
+    //         xmlns="http://www.w3.org/2000/svg"
+    //         width="20"
+    //         height="20"
+    //         viewBox="0 0 24 24"
+    //         fill="none"
+    //         stroke="currentColor"
+    //         stroke-width="2"
+    //         stroke-linecap="round"
+    //         stroke-linejoin="round"
+    //         class="lucide lucide-id-card-lanyard-icon lucide-id-card-lanyard"
+    //       >
+    //         <path d="M13.5 8h-3" />
+    //         <path d="m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" />
+    //         <path d="M16.899 22A5 5 0 0 0 7.1 22" />
+    //         <path d="m9 2 3 6" />
+    //         <circle cx="12" cy="15" r="3" />
+    //       </svg>
+    //     </>
+    //   ),
+    //   text: "Mauricio Khalil",
+    // },
+    // link4: {
+    //   icon: (
+    //     <>
+    //       <Phone width={20} />
+    //     </>
+    //   ),
+    //   text: "51 98225-1864",
+    // },
     link5: {
       icon: (
         <>
           <Mail width={20} />
         </>
       ),
-      text: "mauricio@assessoriaexclusiva.com.br",
+      text: "planitur.consultoria@gmail.com",
     },
-    link6: {
-      icon: (
-        <>
-          <>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-id-card-lanyard-icon lucide-id-card-lanyard"
-            >
-              <path d="M13.5 8h-3" />
-              <path d="m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" />
-              <path d="M16.899 22A5 5 0 0 0 7.1 22" />
-              <path d="m9 2 3 6" />
-              <circle cx="12" cy="15" r="3" />
-            </svg>
-          </>
-        </>
-      ),
-      text: "José Amaro",
-    },
-    link7: {
-      icon: (
-        <>
-          <Phone width={20} />
-        </>
-      ),
-      text: "+55 (11) 99477-8678",
-    },
+    // link6: {
+    //   icon: (
+    //     <>
+    //       <>
+    //         <svg
+    //           xmlns="http://www.w3.org/2000/svg"
+    //           width="20"
+    //           height="20"
+    //           viewBox="0 0 24 24"
+    //           fill="none"
+    //           stroke="currentColor"
+    //           stroke-width="2"
+    //           stroke-linecap="round"
+    //           stroke-linejoin="round"
+    //           class="lucide lucide-id-card-lanyard-icon lucide-id-card-lanyard"
+    //         >
+    //           <path d="M13.5 8h-3" />
+    //           <path d="m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" />
+    //           <path d="M16.899 22A5 5 0 0 0 7.1 22" />
+    //           <path d="m9 2 3 6" />
+    //           <circle cx="12" cy="15" r="3" />
+    //         </svg>
+    //       </>
+    //     </>
+    //   ),
+    //   text: "José Amaro",
+    // },
+    // link7: {
+    //   icon: (
+    //     <>
+    //       <Phone width={20} />
+    //     </>
+    //   ),
+    //   text: "+55 (11) 99477-8678",
+    // },
     link8: {
       icon: (
         <>
           <Mail width={20} />
         </>
       ),
-      text: "marinho@assessoriaexclusiva.com.br",
+      text: "contato@planiturconsultoria.com",
     },
   };
 
@@ -148,7 +148,7 @@ function Contato({ colorMode }) {
           <div className="font-mainFont flex flex-col tablet2:flex-row gap-4 w-full tablet2:justify-around">
             <div className="flex flex-col gap-4">
               <h1 className="text-primaryLight text-xl font-medium">
-                Miguel Neto Advogados
+                Vamos conversar?
               </h1>
               <div className="flex flex-col gap-4">
                 {Object.values(linksContato)

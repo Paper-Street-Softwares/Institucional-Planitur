@@ -6,7 +6,7 @@ import content from "../../content/content";
 
 function About({ colorMode }) {
   return (
-    <SectionArea className={`bg-[#F0E3D1] `} paddingTopAndBottom={false}>
+    <SectionArea className={`bg-[#F0E3D1] `}>
       <SectionWrapper>
         <div className="flex flex-col tablet2:flex-row">
           {" "}
@@ -24,8 +24,8 @@ function About({ colorMode }) {
           <div className="p-[70px]">
             <SectionHeaderNovo
               colorMode={colorMode}
-              title={content.texts.about.FirstPart}
-              subtitle={content.texts.about.paragraph}
+              title={content.texts.apresentation.title}
+              subtitle={content.texts.apresentation.subtitle}
               type="article"
             />
           </div>

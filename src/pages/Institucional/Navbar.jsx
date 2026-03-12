@@ -90,10 +90,10 @@ function Navbar() {
     <div
       className={`bg-primaryDark fixed w-full z-50 ${mobileOpen ? "" : " border-b-2 border-[#C03D1A]"}`}
     >
-      <div className="max-w-7xl mx-auto px-0">
-        <div className="flex items-center justify-between py-0">
+      <div className="max-w-[1215px] mx-auto px-0 ">
+        <div className="flex items-center justify-between py-0 px-4">
           {/* LOGO */}
-          <div className="w-[45%] tablet2:w-[20%] desktop1ex:w-[20%]">
+          <div className="w-[45%] py-2 tablet2:w-[20%] desktop1ex:w-[20%] ">
             <Link to="/">
               <img
                 src={content.texts.navbar.logo.img}
@@ -180,47 +180,33 @@ function Navbar() {
                 }`}
               >
                 <Link
-                  to="/features/ambiental"
+                  to="/features/tecnicocursivo"
                   className="block px-4 py-2 hover:text-primaryLight"
                 >
-                  Ambiental, ESG e Energia
+                  Técnico-Consultivo
                 </Link>
                 <Link
-                  to="/features/compliance"
+                  to="/features/formativoeducacional"
                   className="block px-4 py-2 hover:text-primaryLight"
                 >
-                  Compliance e Investigações Corporativas
+                  Formativo e Educacional
                 </Link>
                 <Link
-                  to="/features/concorrencial"
+                  to="/features/pesquisaeproducaodeconhecimento"
                   className="block px-4 py-2 hover:text-primaryLight"
                 >
-                  Concorrencial
+                  Pesquisa e Produção de Conhecimento
                 </Link>
-                <Link
+                {/* <Link
                   to="/features/contencioso"
                   className="block px-4 py-2 hover:text-primaryLight"
                 >
                   Contencioso
-                </Link>
+                </Link> */}
               </div>
             </div>
 
             <span className="text-primaryLight">•</span>
-
-            {/* <a href="#team" className={linkClass()}>
-              ADVOGADOS
-              {underline("team")}
-            </a>
-
-            <span className="text-primaryLight">•</span> */}
-
-            {/* <a href="#reconhecimento" className={linkClass()}>
-              RECONHECIMENTOS
-              {underline("reconhecimento")}
-            </a>
-
-            <span className="text-primaryLight">•</span> */}
 
             <Link to="/contato" className={linkClass()}>
               CONTATO
@@ -239,10 +225,10 @@ function Navbar() {
               </button>
             </div>
 
-            <div className="flex flex-col gap-0">
+            {/* <div className="flex flex-col gap-0">
               <button className="text-white">PT</button>
               <button className="text-white/40 hover:text-white">EN</button>
-            </div>
+            </div> */}
           </section>
         </div>
       </div>
@@ -250,7 +236,7 @@ function Navbar() {
       {/* MOBILE MENU */}
       <div
         className={`xl:hidden bg-primaryDark text-white px-6 text-sm space-y-4 font-light
-  transition-all duration-300 ease-out transform origin-top
+  transition-all duration-300 ease-out transform origin-top mt-4
   ${
     mobileOpen
       ? "scale-y-100 opacity-100 translate-y-0 max-h-screen"
@@ -321,33 +307,33 @@ function Navbar() {
           {mobileAreasOpen && (
             <div className="mt-2 ml-4 flex flex-col gap-2 text-sm normal-case">
               <Link
-                to="/features/ambiental"
+                to="/features/tecnicocursivo"
                 onClick={() => setMobileOpen(false)}
                 className={`${linkClass("/features/ambiental")}`}
               >
-                Ambiental, ESG e Energia
+                Técnico-Consultivo
               </Link>
               <Link
-                to="/features/compliance"
+                to="/features/formativoeducacional"
                 onClick={() => setMobileOpen(false)}
                 className={`${linkClass("/features/compliance")}`}
               >
-                Compliance e Investigações Corporativas
+                Formativo e Educacional
               </Link>
               <Link
-                to="/features/concorrencial"
+                to="/features/pesquisaeproducaodeconhecimento"
                 onClick={() => setMobileOpen(false)}
                 className={`${linkClass("/features/concorrencial")}`}
               >
-                Concorrencial
+                Pesquisa e Produção de Conhecimento
               </Link>
-              <Link
+              {/* <Link
                 to="/features/contencioso"
                 onClick={() => setMobileOpen(false)}
                 className={`${linkClass("/features/contencioso")}`}
               >
                 Contencioso
-              </Link>
+              </Link> */}
             </div>
           )}
         </div>

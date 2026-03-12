@@ -10,9 +10,9 @@ function FormNovoTemplate() {
     <SectionArea>
       <SectionWrapper>
         <SectionHeaderNovo
-          miniTitle={content.texts.form.minitag}
-          title={content.texts.form.title}
-          subtitle={content.texts.form.subtitle}
+          miniTitle=""
+          title="Quer colaborar com a PLANITUR em projetos e ações técnicas?"
+          subtitle=""
         />
         <WhatsappForm />
       </SectionWrapper>
