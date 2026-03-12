@@ -215,8 +215,8 @@ function Navbar() {
           </div>
 
           {/* RIGHT SIDE */}
-          <section className="flex gap-4">
-            <div className="desktop1ex:hidden flex items-center gap-4">
+          <section className="desktop1ex:hidden  flex gap-4">
+            <div className="flex items-center gap-4">
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
                 className="text-primaryLight"

@@ -11,12 +11,12 @@ function Hero() {
     <SectionArea className={``} paddingTopAndBottom={false}>
       <section
         id="/"
-        className="relative h-[65vh] phone2:h-[80vh] phone3:h-[90vh] tablet1:h-[47vh] desktop1:h-[60vh] flex flex-col items-center justify-center overflow-hidden w-full"
+        className="relative min-h-[500px] h-[65vh] max-h-[750px] flex flex-col items-center justify-center overflow-hidden w-full"
       >
         <div className="absolute inset-0 z-0">
           {" "}
           <img
-          src={content.texts.hero.heroBg}
+            src={content.texts.hero.heroBg}
             alt="Cityscape"
             className="w-full h-full object-cover"
           />
@@ -30,7 +30,7 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="w-fit mx-auto text-[29px] desktop2:text-[50px] font-mainFont font-light text-[#ECDDC6] leading-8 desktop1:leading-[60px] drop-shadow-lg">
+            <h1 className="w-fit mx-auto text-[29px] desktop2:text-[50px] font-mainFont font-light text-[#ECDDC6] leading-8 desktop2:leading-[44px] drop-shadow-lg">
               {content.texts.hero.FirstPart}
               <br />
               {content.texts.hero.Destaque}
@@ -39,7 +39,7 @@ function Hero() {
             </h1>
           </motion.div>
         </div>
-        <div className="z-10 w-full flex justify-center absolute bottom-0 tablet2:bottom-10">
+        <div className="z-10 w-full flex justify-center absolute bottom-10">
           {" "}
           <ScrollMouse />
         </div>
