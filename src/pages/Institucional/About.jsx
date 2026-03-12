@@ -6,7 +6,7 @@ import content from "../../content/content";
 
 function About({ colorMode }) {
   return (
-    <SectionArea className={`bg-[#F0E3D1] `}>
+    <SectionArea className={`bg-terciary`}>
       <SectionWrapper>
         <div className="flex flex-col tablet2:flex-row gap-4">
           <div className="flex justify-center items-center">

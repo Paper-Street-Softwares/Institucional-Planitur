@@ -7,7 +7,7 @@ import content from "../../content/content";
 
 function FormNovoTemplate() {
   return (
-    <SectionArea>
+    <SectionArea className={`bg-secondary`}>
       <SectionWrapper>
         <SectionHeaderNovo
           miniTitle=""

@@ -26,7 +26,59 @@ const WhatsappForm = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const sendToWhatsApp = () => {
+  //   const sendToWhatsApp = () => {
+  //     setIsSubmitting(true);
+
+  //     const validationErrors = {};
+
+  //     if (!name) validationErrors.name = "O campo Nome é obrigatório.";
+  //     if (!location)
+  //       validationErrors.location = "O campo Cidade/Estado é obrigatório.";
+  //     if (!phone) validationErrors.phone = "O campo Telefone é obrigatório.";
+  //     if (!email) validationErrors.email = "O campo Email é obrigatório.";
+  //     if (!area) validationErrors.area = "O campo Área é obrigatório.";
+  //     if (!experience)
+  //       validationErrors.experience = "O campo Experiência é obrigatório.";
+
+  //     if (Object.keys(validationErrors).length > 0) {
+  //       setErrors(validationErrors);
+  //       setIsSubmitting(false);
+  //       return;
+  //     }
+
+  //     const phoneWhatsApp = "5592992951515";
+
+  //     const text = `
+  // Nova candidatura recebida pelo site.
+
+  // Nome: ${name}
+  // Cidade/Estado: ${location}
+  // Telefone: ${phone}
+  // E-mail: ${email}
+  // Área de atuação: ${area}
+
+  // Experiência:
+  // ${experience}
+
+  // Currículo enviado pelo formulário.
+  // `;
+
+  //     const url = `https://wa.me/${phoneWhatsApp}?text=${encodeURIComponent(text)}`;
+
+  //     window.open(url, "_blank");
+
+  //     setName("");
+  //     setLocation("");
+  //     setPhone("");
+  //     setEmail("");
+  //     setArea("");
+  //     setExperience("");
+  //     setResume(null);
+
+  //     setIsSubmitting(false);
+  //   };
+
+  const sendToEmail = () => {
     setIsSubmitting(true);
 
     const validationErrors = {};
@@ -46,109 +98,35 @@ const WhatsappForm = () => {
       return;
     }
 
-    const phoneWhatsApp = "5592992951515";
-
-    const text = `
-Nova candidatura recebida pelo site.
-
-Nome: ${name}
-Cidade/Estado: ${location}
-Telefone: ${phone}
-E-mail: ${email}
-Área de atuação: ${area}
-
-Experiência:
-${experience}
-
-Currículo enviado pelo formulário.
-`;
-
-    const url = `https://wa.me/${phoneWhatsApp}?text=${encodeURIComponent(text)}`;
-
-    window.open(url, "_blank");
-
-    setName("");
-    setLocation("");
-    setPhone("");
-    setEmail("");
-    setArea("");
-    setExperience("");
-    setResume(null);
-
-    setIsSubmitting(false);
-  };
-
-  const sendToEmail = () => {
-    setIsSubmitting(true);
-    const validationErrors = {};
-
-    if (!name) validationErrors.name = "O campo Nome é obrigatório.";
-    if (!phone) validationErrors.phone = "O campo Telefone é obrigatório.";
-    if (!email) validationErrors.email = "O campo Email é obrigatório.";
-    if (!contractInfo)
-      validationErrors.contractInfo =
-        "O campo Informações do contrato é obrigatório.";
-    if (!type) validationErrors.type = "O campo Tipo é obrigatório.";
-    if (!financedValue)
-      validationErrors.financedValue =
-        "O campo Valor Financiado é obrigatório.";
-    if (!installments)
-      validationErrors.installments =
-        "O campo Quantidade de Parcelas é obrigatório.";
-    if (!paidInstallments)
-      validationErrors.paidInstallments =
-        "O campo Quantidade de parcelas pagas é obrigatório.";
-    if (!installmentValue)
-      validationErrors.installmentValue =
-        "O campo Valor da Parcela é obrigatório.";
-    if (!lateInstallments)
-      validationErrors.lateInstallments =
-        "O campo Parcelas em atraso é obrigatório.";
-    if (!message) validationErrors.message = "O campo Mensagem é obrigatório.";
-
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      setIsSubmitting(false);
-      return;
-    }
-
     const templateParams = {
       name,
+      location,
       phone,
       email,
-      contractInfo,
-      type,
-      financedValue,
-      installments,
-      paidInstallments,
-      installmentValue,
-      lateInstallments,
-      message,
+      area,
+      experience,
     };
 
     emailjs
       .send(
-        "service_gik4w8p", // substitua pelo seu Service ID
-        "template_o4kc0ak", // substitua pelo seu Template ID
+        "service_A_Definir",
+        "template_A_Definir",
         templateParams,
-        "8bJXn-qPMOzTraXbd", // substitua pela sua Public Key
+        "8bJXn-A_Definir",
       )
       .then(
         () => {
           alert("Mensagem enviada por email com sucesso!");
           setIsSubmitting(false);
-          // Limpar campos
+
           setName("");
+          setLocation("");
           setPhone("");
           setEmail("");
-          setContractInfo("");
-          setType("");
-          setFinancedValue("");
-          setInstallments("");
-          setPaidInstallments("");
-          setInstallmentValue("");
-          setLateInstallments("");
-          setMessage("");
+          setArea("");
+          setExperience("");
+          setResume(null);
+
           setErrors({});
         },
         (error) => {
@@ -159,182 +137,183 @@ Currículo enviado pelo formulário.
   };
 
   return (
-    <div className="bg-white shadow-lg p-6 rounded-[10px] w-[90%] max-w-[700px] h-auto font-secondFont">
-      <div className=" text-paragraph3 phone3:text-paragraph4">
-        {/* Nome */}
-        <div className="mb-6">
-          <label className="block font-medium mb-1 text-gray-400">
-            Nome completo:
-          </label>
-          <div className="flex text-primaryDark">
-            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
-              <User />
+    <div className="bg-white shadow-lg p-6 rounded-[10px] w-full max-w-[1215px] h-auto font-secondFont">
+      <div className="flex flex-col gap-0 tablet2:flex-row tablet2:gap-6 text-paragraph3 phone3:text-paragraph4">
+        <div className="tablet2:w-[55%]">
+          {/* Nome */}
+          <div className="mb-6">
+            <label className="block font-medium mb-1 text-gray-400">
+              Nome completo:
+            </label>
+            <div className="flex text-primaryDark">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+                <User />
+              </div>
+              <input
+                className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Nome completo"
+              />
             </div>
-            <input
-              className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Nome completo"
-            />
+            {errors.name && <p className="text-red-500 mt-2">{errors.name}</p>}
           </div>
-          {errors.name && <p className="text-red-500 mt-2">{errors.name}</p>}
-        </div>
 
-        {/* Cidade / Estado */}
-        <div className="mb-6">
-          <label className="block font-medium mb-1 text-gray-400">
-            Cidade / Estado:
-          </label>
-          <div className="flex text-primaryDark">
-            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
-              <MapPin />
+          {/* Cidade / Estado */}
+          <div className="mb-6">
+            <label className="block font-medium mb-1 text-gray-400">
+              Cidade / Estado:
+            </label>
+            <div className="flex text-primaryDark">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+                <MapPin />
+              </div>
+              <input
+                className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
+                type="text"
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
+                placeholder="Ex: São Paulo / SP"
+              />
             </div>
-            <input
-              className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
-              type="text"
-              value={location}
-              onChange={(e) => setLocation(e.target.value)}
-              placeholder="Ex: São Paulo / SP"
-            />
+            {errors.location && (
+              <p className="text-red-500 mt-2">{errors.location}</p>
+            )}
           </div>
-          {errors.location && (
-            <p className="text-red-500 mt-2">{errors.location}</p>
-          )}
-        </div>
 
-        {/* Telefone */}
-        <div className="mb-6">
-          <label className="block font-medium mb-1 text-gray-400">
-            Telefone:
-          </label>
-          <div className="flex text-primaryDark">
-            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
-              <Phone />
+          {/* Telefone */}
+          <div className="mb-6">
+            <label className="block font-medium mb-1 text-gray-400">
+              Telefone:
+            </label>
+            <div className="flex text-primaryDark">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+                <Phone />
+              </div>
+              <input
+                className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
+                type="tel"
+                value={phone}
+                onChange={(e) => {
+                  let value = e.target.value;
+
+                  value = value.replace(/\D/g, "");
+                  value = value.substring(0, 11);
+
+                  if (value.length > 6) {
+                    value = `(${value.substring(0, 2)}) ${value.substring(
+                      2,
+                      7,
+                    )}-${value.substring(7)}`;
+                  } else if (value.length > 2) {
+                    value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
+                  } else if (value.length > 0) {
+                    value = `(${value}`;
+                  }
+
+                  setPhone(value);
+                }}
+                placeholder="(00) 00000-0000"
+              />
             </div>
-            <input
-              className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
-              type="tel"
-              value={phone}
-              onChange={(e) => {
-                let value = e.target.value;
-
-                value = value.replace(/\D/g, "");
-                value = value.substring(0, 11);
-
-                if (value.length > 6) {
-                  value = `(${value.substring(0, 2)}) ${value.substring(
-                    2,
-                    7,
-                  )}-${value.substring(7)}`;
-                } else if (value.length > 2) {
-                  value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
-                } else if (value.length > 0) {
-                  value = `(${value}`;
-                }
-
-                setPhone(value);
-              }}
-              placeholder="(00) 00000-0000"
-            />
-          </div>
-          {errors.phone && <p className="text-red-500 mt-2">{errors.phone}</p>}
-        </div>
-
-        {/* Email */}
-        <div className="mb-6">
-          <label className="block font-medium mb-1 text-gray-400">Email:</label>
-          <div className="flex text-primaryDark">
-            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
-              <Mail />
-            </div>
-            <input
-              className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="E-mail"
-            />
-          </div>
-          {errors.email && <p className="text-red-500 mt-2">{errors.email}</p>}
-        </div>
-
-        {/* Área */}
-        <div className="mb-6">
-          <label className="block font-medium mb-1 text-gray-400">
-            Área de atuação:
-          </label>
-          <div className="flex text-primaryDark">
-            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
-              <ListChecks />
-            </div>
-            <input
-              className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
-              type="text"
-              value={area}
-              onChange={(e) => setArea(e.target.value)}
-              placeholder="Ex: Direito Civil"
-            />
-          </div>
-          {errors.area && <p className="text-red-500 mt-2">{errors.area}</p>}
-        </div>
-
-        {/* Experiência */}
-        <div className="mb-6">
-          <label className="block font-medium mb-1 text-gray-400">
-            Breve resumo da experiência:
-          </label>
-          <div className="flex text-primaryDark">
-            <div className="flex items-start justify-center w-12 px-1 bg-white shadow-md rounded-md">
-              <MessageCircle className="m-auto" />
-            </div>
-            <textarea
-              className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
-              value={experience}
-              onChange={(e) => setExperience(e.target.value)}
-              placeholder="Conte um pouco da sua experiência"
-            />
-          </div>
-          {errors.experience && (
-            <p className="text-red-500 mt-2">{errors.experience}</p>
-          )}
-        </div>
-
-        {/* Upload currículo */}
-        <div className="mb-6">
-          <label className="block font-medium mb-1 text-gray-400">
-            Upload do currículo:
-          </label>
-          <div className="flex text-primaryDark">
-            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
-              <FileText />
-            </div>
-            <input
-              className="px-1 py-2 w-[90%] ml-4"
-              type="file"
-              accept=".pdf,.doc,.docx"
-              onChange={(e) => setResume(e.target.files[0])}
-            />
+            {errors.phone && (
+              <p className="text-red-500 mt-2">{errors.phone}</p>
+            )}
           </div>
         </div>
+        <div className="tablet2:w-[55%]">
+          {/* Email */}
+          <div className="mb-6">
+            <label className="block font-medium mb-1 text-gray-400">
+              Email:
+            </label>
+            <div className="flex text-primaryDark">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+                <Mail />
+              </div>
+              <input
+                className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="E-mail"
+              />
+            </div>
+            {errors.email && (
+              <p className="text-red-500 mt-2">{errors.email}</p>
+            )}
+          </div>
+          {/* Área */}
+          <div className="mb-6">
+            <label className="block font-medium mb-1 text-gray-400">
+              Área de atuação:
+            </label>
+            <div className="flex text-primaryDark">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+                <ListChecks />
+              </div>
+              <input
+                className="px-1 py-2 border-0 rounded-none bg-transparent border-b-2 border-black/30 w-[90%] ml-4 text-black outline-none"
+                type="text"
+                value={area}
+                onChange={(e) => setArea(e.target.value)}
+                placeholder="Ex: Direito Civil"
+              />
+            </div>
+            {errors.area && <p className="text-red-500 mt-2">{errors.area}</p>}
+          </div>
 
-        {/* Botão */}
+          {/* Experiência */}
+          <div className="mb-6">
+            <label className="block font-medium mb-1 text-gray-400">
+              Breve resumo da experiência:
+            </label>
+            <div className="flex text-primaryDark">
+              <div className="flex items-start justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+                <MessageCircle className="m-auto" />
+              </div>
+              <textarea
+                className="px-1 py-2 border-0 h-12 rounded-none border-b-2 border-black/30 w-[90%] bg-primaryDark/10 rounded-tl-md rounded-tr-md ml-4 text-black outline-none"
+                value={experience}
+                onChange={(e) => setExperience(e.target.value)}
+                // placeholder="Conte-nos sua experiência"
+              />
+            </div>
+            {errors.experience && (
+              <p className="text-red-500 mt-2">{errors.experience}</p>
+            )}
+          </div>
+        </div>
+      </div>
+      {/* Upload currículo */}
+      <div className="mb-6">
+        <label className="block font-medium mb-1 text-gray-400">
+          Upload do currículo:
+        </label>
+        <div className="flex text-primaryDark">
+          <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+            <FileText />
+          </div>
+          <input
+            className="px-1 py-2 w-[90%] ml-4"
+            type="file"
+            accept=".pdf,.doc,.docx"
+            onChange={(e) => setResume(e.target.files[0])}
+          />
+        </div>
+      </div>
+      {/* Botão */}
+      <div className="flex justify-center">
         <ButtonReflexo
           type="button"
-          className="flex items-center w-full text-white"
-          onClick={sendToWhatsApp}
+          className="flex items-center w-fit text-white"
+          bgClass={`bg-primaryDark`}
+          onClick={sendToEmail}
+          icon={<Mail width={18} />}
           disabled={isSubmitting}
-          icon={content.texts.svgs.wpp}
-          label={isSubmitting ? "Enviando..." : "Enviar Mensagem"}
-        >
-          <div className="flex items-center justify-center w-full">
-            <img
-              src={WhatsAppIcon}
-              className="w-6 h-6 mr-2 phone2:w-8 phone2:h-8"
-              alt="WhatsApp Icon"
-            />
-          </div>
-        </ButtonReflexo>
+          label={isSubmitting ? "Enviando..." : "Enviar Formulário"}
+        ></ButtonReflexo>
       </div>
     </div>
   );
