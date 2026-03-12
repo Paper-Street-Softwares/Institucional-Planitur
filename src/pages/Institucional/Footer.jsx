@@ -7,9 +7,9 @@ export default function Footer() {
   return (
     <SectionArea paddingTopAndBottom={false}>
       <footer className="bg-primaryDark text-white border-t w-full border-[#C03D1A] pb-10 font-mainFont">
-        <div className="flex flex-col px-[20px] tablet2:flex-row tablet2:pt-[50px] items-start justify-center gap-12">
+        <div className="flex flex-col px-[20px] pt-[20px] tablet2:flex-row tablet2:pt-[50px] items-start justify-center gap-12">
           {/* COLUNA 1 - LOGO */}
-          <div className="flex self-start tablet2:self-center">
+          <div className="flex self-start tablet2:self-start">
             <img
               src={content.texts.navbar.logo.img}
               alt="Miguel Neto Advogados"
@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
 
           {/* COLUNA 2 - LINKS */}
-          <div className="space-y-10 text-sm flex flex-col tablet2:h-112 ">
+          <div className="space-y-10 text-sm flex flex-col tablet2:h-auto ">
             <div>
               <h3 className="text-primaryLight font-semibold mb-3">
                 SOBRE NÓS
@@ -88,7 +88,7 @@ export default function Footer() {
 
           {/* COLUNA 4 - CONTATO */}
           <div className="flex flex-col justify-between text-sm">
-            <div className="space-y-24">
+            <div className="space-y-10">
               <div className="flex flex-col space-y-6">
                 <div className="flex items-center gap-3">
                   <Phone size={18} className="text-primaryLight" />
@@ -121,7 +121,7 @@ export default function Footer() {
                 </p>
               </div> */}
 
-              <div className="flex gap-4 pt-2">
+              <div className="flex gap-4 pt-0">
                 <a href={content.texts.links.instagram} target="_blank">
                   {" "}
                   <Instagram width={18} className="text-white/70" />
@@ -132,7 +132,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="text-xs text-gray-400 tablet2:mt-[82px]">
+            <div className="text-xs text-gray-400 mt-[32px]">
               ©{content.texts.footer.copyrightLine}
             </div>
           </div>

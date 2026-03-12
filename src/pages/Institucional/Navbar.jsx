@@ -76,7 +76,7 @@ function Navbar() {
     `relative transition duration-500 hover:text-primaryLight ${
       (location.pathname === "/" ? activeSection === id : currentRoute === id)
         ? "text-primaryLight"
-        : "text-white"
+        : "text-primaryDark"
     }`;
 
   const underline = (id) =>
@@ -88,10 +88,10 @@ function Navbar() {
 
   return (
     <div
-      className={`bg-primaryDark fixed w-full z-50 ${mobileOpen ? "" : " border-b-2 border-[#C03D1A]"}`}
+      className={`bg-terciary fixed w-full z-50 ${mobileOpen ? "" : " border-b-2 border-[#C03D1A]"}`}
     >
       <div className="max-w-[1215px] mx-auto px-0 ">
-        <div className="flex items-center justify-between py-0 px-4">
+        <div className="flex items-center justify-between py-2 px-4">
           {/* LOGO */}
           <div className="w-[45%] py-2 tablet2:w-[20%] desktop1ex:w-[20%] ">
             <Link to="/">
@@ -104,7 +104,7 @@ function Navbar() {
           </div>
 
           {/* DESKTOP MENU */}
-          <div className="hidden desktop1ex:flex items-center gap-5 text-white text-sm tracking-wide font-mainFont font-light">
+          <div className="hidden desktop1ex:flex items-center gap-5 text-primaryDark text-sm tracking-wide font-mainFont font-medium">
             <Link to="/" className={linkClass()}>
               HOME
               {underline("home")}
@@ -125,7 +125,7 @@ function Navbar() {
               </button>
 
               <div
-                className={`absolute top-full left-0 mt-4 bg-primaryDark uppercase text-white shadow-xl w-56 py-3 transition-all duration-300 ${
+                className={`absolute top-full left-0 mt-4 bg-terciary uppercase text-text-primaryDark shadow-xl w-auto py-3 transition-all duration-300 ${
                   openDropdown === "escritorio"
                     ? "opacity-100 visible"
                     : "opacity-0 invisible"
@@ -173,7 +173,7 @@ function Navbar() {
               </button>
 
               <div
-                className={`absolute top-full left-0 mt-4 bg-primaryDark shadow-xl w-64 py-3 transition-all duration-300 normal-case ${
+                className={`absolute top-full left-0 mt-4 bg-terciary text-text-primaryDark shadow-xl w-auto py-3 transition-all duration-300 normal-case ${
                   openDropdown === "areas"
                     ? "opacity-100 visible"
                     : "opacity-0 invisible"
@@ -226,8 +226,8 @@ function Navbar() {
             </div>
 
             {/* <div className="flex flex-col gap-0">
-              <button className="text-white">PT</button>
-              <button className="text-white/40 hover:text-white">EN</button>
+              <button className="text-primaryDark">PT</button>
+              <button className="text-primaryDark/40 hover:text-primaryDark">EN</button>
             </div> */}
           </section>
         </div>
@@ -235,7 +235,7 @@ function Navbar() {
 
       {/* MOBILE MENU */}
       <div
-        className={`xl:hidden bg-primaryDark text-white px-6 text-sm space-y-4 font-light
+        className={`xl:hidden bg-terciary text-primaryDark px-6 text-sm space-y-4 font-medium
   transition-all duration-300 ease-out transform origin-top mt-4
   ${
     mobileOpen
@@ -348,7 +348,7 @@ function Navbar() {
 
         {/* <div className="flex gap-3 pt-4 border-t border-white/20">
             <button>PT</button>
-            <button className="text-white/50">EN</button>
+            <button className="text-primaryDark/50">EN</button>
           </div> */}
       </div>
     </div>
