@@ -138,7 +138,7 @@ function Contato({ colorMode }) {
           {/* <div className="absolute inset-0 bg-[#0f2a3a]/40 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f2a3a] via-transparent to-transparent" /> */}
         </div>
-        <div className="z-10 w-full flex justify-center absolute bottom-0 tablet2:bottom-10">
+        <div className="z-10 w-full flex justify-center absolute bottom-10">
           <ScrollMouse />
         </div>
       </section>

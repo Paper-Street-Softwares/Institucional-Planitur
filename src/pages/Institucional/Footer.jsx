@@ -9,7 +9,7 @@ export default function Footer() {
     <SectionArea paddingTopAndBottom={false}>
       <footer className="bg-terciary text-primaryDark/80 border-t w-full pb-10 font-mainFont flex justify-center">
         <SectionWrapper>
-          <div className="flex flex-col pt-[20px] tablet2:flex-row tablet2:pt-[50px] items-start justify-center gap-12 tablet2:gap-6 phone3:grid phone3:grid-cols-2 tablet1:grid-cols-4 desktop1:grid-cols-4">
+          <div className="flex flex-col w-full pt-[20px] tablet2:flex-row tablet2:pt-[50px] items-start justify-center gap-12 tablet2:gap-6 phone3:grid phone3:grid-cols-2 tablet1:grid-cols-4 desktop1:grid-cols-4">
             {/* COLUNA 1 - LOGO */}
             <div className="flex flex-col gap-8">
               <img

@@ -212,9 +212,18 @@ const content = {
           description: (
             <div>
               Apresentam soluções estratégicas para apoiar decisões, estruturar
-              iniciativas e fortalecer territórios, são produtos resultantes
-              desse eixo, diagnósticos, estruturação de políticas públicas,
-              planejamento estratégico e territorial, entre outros.
+              iniciativas e fortalecer territórios. São produtos resultantes
+              desse eixo diagnósticos técnicos, estudos analíticos, estruturação
+              de políticas públicas, planejamento estratégico e territorial,
+              entre outros instrumentos voltados à qualificação da gestão e ao
+              desenvolvimento sustentável. Essas soluções buscam compreender de
+              forma aprofundada os contextos locais, identificar desafios e
+              potencialidades, e orientar a formulação de estratégias mais
+              eficientes e integradas. A partir de metodologias consolidadas e
+              análise de dados, contribuem para o aprimoramento da tomada de
+              decisão, a organização de iniciativas institucionais e a
+              construção de caminhos consistentes para o desenvolvimento
+              econômico, social e institucional dos territórios.
             </div>
           ),
           icon: <Briefcase />,
@@ -230,7 +239,16 @@ const content = {
             <div>
               Desenvolvimento de competências e qualificações de pessoas,
               empresários, gestores, equipes, instituições e comunidades, por
-              meio de cursos, oficinas e processos formativos.
+              meio de cursos, oficinas e processos formativos. As iniciativas
+              são estruturadas para fortalecer habilidades técnicas, gerenciais
+              e estratégicas, estimulando a autonomia, a inovação e a capacidade
+              de adaptação diante dos desafios contemporâneos. A partir de
+              metodologias participativas e conteúdos alinhados às demandas do
+              mercado e da sociedade, os processos formativos promovem
+              aprendizado prático, troca de experiências e construção coletiva
+              de conhecimento. Dessa forma, contribuem para o aprimoramento
+              profissional, o fortalecimento institucional e o desenvolvimento
+              sustentável de territórios e organizações.
             </div>
           ),
           icon: <User />,
@@ -245,9 +263,20 @@ const content = {
 
           description: (
             <div>
-              Investigação aplicada para qualificar decisões, políticas e
-              projetos através do desenvolvimento de estudos, sistematizações,
-              indicadores e produção técnica.
+              Investigação aplicada voltada a qualificar decisões, políticas e
+              projetos por meio do desenvolvimento de estudos, sistematizações,
+              indicadores e produção técnica. Esse eixo busca transformar
+              informações em conhecimento útil para orientar estratégias,
+              avaliar resultados e aprimorar processos de gestão e planejamento.
+              A partir de metodologias de pesquisa, análise de dados e produção
+              de evidências, são elaborados diagnósticos, relatórios técnicos e
+              instrumentos de monitoramento capazes de apoiar gestores,
+              instituições e territórios na tomada de decisões mais consistentes
+              e fundamentadas. Dessa forma, a investigação aplicada contribui
+              para ampliar a compreensão sobre realidades específicas,
+              identificar tendências e subsidiar a formulação de políticas e
+              iniciativas mais eficazes e alinhadas às necessidades sociais e
+              institucionais.
             </div>
           ),
           icon: <Scale />,
@@ -343,9 +372,23 @@ const content = {
       subtitle: (
         <>
           {" "}
-          A premissa do turismo quando bem planejado transforma realidades, é o
-          que nos move. Partimos da força dos territórios, das pessoas e dos
-          saberes locais para construir soluções colaborativas e sustentáveis.
+          A premissa de que o turismo, quando bem planejado, pode transformar
+          realidades é o que nos move. Partimos da força dos territórios, das
+          pessoas e dos saberes locais para construir soluções colaborativas e
+          sustentáveis.
+          <br />
+          <br />
+          Acreditamos que cada lugar carrega potencialidades únicas, capazes de
+          gerar desenvolvimento, fortalecer identidades e criar oportunidades
+          para quem vive no território. Por isso, trabalhamos valorizando o
+          conhecimento local, estimulando a participação das comunidades e
+          promovendo iniciativas que respeitam a cultura, o ambiente e a
+          dinâmica de cada região.
+          <br />
+          <br />
+          Assim, o turismo se torna não apenas uma atividade econômica, mas um
+          caminho para impulsionar o desenvolvimento territorial de forma
+          responsável, integrada e duradoura.
         </>
       ),
       img: imgApresentation,

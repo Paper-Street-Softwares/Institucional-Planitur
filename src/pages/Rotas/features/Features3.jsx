@@ -8,7 +8,7 @@ import content from "../../../content/content";
 function Features3({ colorMode }) {
   return (
     <div id="pesquisaeproducaodeconhecimento">
-      <section className="relative h-[63vh] phone2:h-[60vh] phone3:h-[65vh] tablet1:h-[68vh] tablet2:h-[73vh] desktop1:h-[56vh] flex flex-col items-center justify-center overflow-hidden w-full">
+      <section className="relative min-h-[500px] h-[65vh] max-h-[750px] flex flex-col items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <img
             src={content.texts.features.cards.card3.imgFeatures3}
@@ -19,7 +19,7 @@ function Features3({ colorMode }) {
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f2a3a] via-transparent to-transparent" /> */}
         </div>
 
-        <div className="z-10 w-full flex justify-center absolute bottom-0 tablet2:bottom-10">
+        <div className="z-10 w-full flex justify-center absolute bottom-10">
           <ScrollMouse />
         </div>
       </section>

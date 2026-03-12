@@ -28,7 +28,7 @@ function ConteudoTeam({ colorMode }) {
           />
         </div>
 
-        <div className="z-10 w-full flex justify-center absolute bottom-0 tablet2:bottom-10">
+        <div className="z-10 w-full flex justify-center absolute bottom-10">
           <ScrollMouse />
         </div>
       </section>
