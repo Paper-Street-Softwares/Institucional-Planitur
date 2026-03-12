@@ -91,7 +91,7 @@ function Navbar() {
       className={`bg-terciary fixed w-full z-50 ${mobileOpen ? "" : " border-b-2 border-[#C03D1A]"}`}
     >
       <div className="max-w-[1215px] mx-auto px-0 ">
-        <div className="flex items-center justify-between py-2 px-4">
+        <div className="flex items-center justify-between pt-2 px-4">
           {/* LOGO */}
           <div className="w-[45%] py-2 tablet2:w-[20%] desktop1ex:w-[20%] ">
             <Link to="/">
