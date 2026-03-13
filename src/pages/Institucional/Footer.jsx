@@ -18,22 +18,24 @@ export default function Footer() {
                 className="w-[220px]"
               />
 
-              <div className="flex gap-4">
-                <a
-                  href={content.texts.links.instagram}
-                  target="_blank"
-                  className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
-                >
-                  {" "}
-                  <Instagram width={18} className="text-primaryDark/70" />
-                </a>
-                <a
-                  href={content.texts.links.linkedin}
-                  target="_blank"
-                  className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
-                >
-                  <Linkedin width={18} className="text-primaryDark/70" />
-                </a>
+              <div className="flex flex-col gap-4">
+                <h1 className="font-secondFont">Siga a PLANITUR</h1>
+                <div className="flex gap-4">
+                  <a
+                    href={content.texts.links.instagram}
+                    target="_blank"
+                    className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
+                  >
+                    <Instagram width={18} className="text-primaryDark/70" />
+                  </a>
+                  <a
+                    href={content.texts.links.linkedin}
+                    target="_blank"
+                    className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
+                  >
+                    <Linkedin width={18} className="text-primaryDark/70" />
+                  </a>
+                </div>
               </div>
             </div>
 

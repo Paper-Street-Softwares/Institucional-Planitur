@@ -13,7 +13,7 @@ function FeaturesContencioso({ colorMode }) {
           <img
             src={bgImg}
             alt="Cityscape"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
           {/* <div className="absolute inset-0 bg-[#0f2a3a]/40 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f2a3a] via-transparent to-transparent" /> */}

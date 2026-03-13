@@ -21,7 +21,7 @@ function Hero({ colorMode }) {
           <img
             src={content.texts.hero.heroBg}
             alt="Cityscape"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />

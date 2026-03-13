@@ -41,7 +41,7 @@ function ConteudoAbout({ colorMode }) {
     <div>
       <section
         id="home"
-        className="font-mainFont relative min-h-[500px] h-[47vh] max-h-[405px] flex flex-col items-center justify-center overflow-hidden w-full"
+        className="font-mainFont relative min-h-[500px] h-[47vh] max-h-[405px] desktop2:min-h-[700px] flex flex-col items-center justify-center overflow-hidden w-full"
       >
         <div className="absolute inset-0 z-0">
           <img
