@@ -63,8 +63,8 @@ export default function Index() {
         <main>
           <Hero />
           <About colorMode={colorMode} />
-          <Mapa />
-          <FormNovoTemplate />
+          <Mapa colorMode={colorMode} />
+          <FormNovoTemplate colorMode={colorMode} />
         </main>
         <Footer />
       </ColorModeProvider>

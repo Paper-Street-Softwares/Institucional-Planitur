@@ -24,7 +24,17 @@ function Contato({ colorMode }) {
           <Phone width={20} className={`text-primaryLight`} />
         </>
       ),
-      text: "51 98225-1864",
+      text: (
+        <>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={content.texts.links.ctaWhatsapp}
+          >
+            {content.texts.infos.phone}
+          </a>
+        </>
+      ),
     },
     // link2: {
     //   icon: (

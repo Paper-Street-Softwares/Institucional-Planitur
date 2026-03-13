@@ -73,7 +73,7 @@ function ConteudoAbout({ colorMode }) {
               <div className="relative w-[80%] mx-auto flex tablet1:w-[94%] desktop1:w-full desktop2:max-w-[700px]">
                 {/* Área com scroll */}
                 <div ref={boxRef} className="custom-native-scroll flex-1">
-                  <p className="text-justify font-light font-mainFont text-black/70">
+                  <p className="text-justify font-light font-mainFont ">
                     <SectionHeaderNovo
                       miniTitle={content.texts.about.miniTag}
                       subtitle={content.texts.about.subtitle}
@@ -82,7 +82,9 @@ function ConteudoAbout({ colorMode }) {
                       type="article"
                       className={`mb-6`}
                     />
-                    {content.texts.about.paragraph}
+                    <span className="text-black/70">
+                      {content.texts.about.paragraph}
+                    </span>
                   </p>
                 </div>
 

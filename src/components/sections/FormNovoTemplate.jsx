@@ -6,7 +6,7 @@ import WhatsappForm from "../interactives/WhatsappForm";
 import content from "../../content/content";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
-function FormNovoTemplate() {
+function FormNovoTemplate({ colorMode }) {
   return (
     <SectionArea className={`bg-secondary`}>
       <SectionWrapper>
@@ -14,6 +14,7 @@ function FormNovoTemplate() {
           miniTitle={content.texts.form.minitag}
           title={content.texts.form.title}
           subtitle={content.texts.form.subtitle}
+          colorMode={colorMode}
         />
         <MotionDivDownToUp
           className={`w-full phone3:max-w-[500px] tablet2:max-w-[700px] desktop1:max-w-[800px]`}
