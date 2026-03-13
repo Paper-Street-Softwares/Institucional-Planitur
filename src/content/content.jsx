@@ -134,7 +134,7 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
+      miniTag: <>PLANITUR CONSULTORIA</>,
       FirstPart: <span>Turismo que </span>,
       Destaque: (
         <span className="destaque relative italic font-light">
@@ -142,7 +142,13 @@ const content = {
         </span>
       ),
       SecondPart: <span>território e natureza</span>,
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Transformamos realidades por meio do turismo, com projetos e
+          consultorias sob medida que integram saberes locais e conhecimento
+          técnico para gerar soluções viáveis.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
       heroBg: bgHero,
@@ -150,7 +156,7 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Entre em contato</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
@@ -371,11 +377,16 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     apresentation: {
-      minitag: <></>,
+      minitag: <>Sobre a Planitur</>,
       title: <>Planejamento estratégico para destinos turísticos</>,
       subtitle: (
         <>
-          {" "}
+          Conheça quem que transforma políticas, projetos e experiências em
+          turismo
+        </>
+      ),
+      paragraph: (
+        <>
           A premissa de que o turismo, quando bem planejado, pode transformar
           realidades é o que nos move. Partimos da força dos territórios, das
           pessoas e dos saberes locais para construir soluções colaborativas e
@@ -386,17 +397,11 @@ const content = {
           gerar desenvolvimento, fortalecer identidades e criar oportunidades
           para quem vive no território. Por isso, trabalhamos valorizando o
           conhecimento local, estimulando a participação das comunidades e
-          promovendo iniciativas que respeitam a cultura, o ambiente e a
-          dinâmica de cada região.
-          <br />
-          <br />
-          Assim, o turismo se torna não apenas uma atividade econômica, mas um
-          caminho para impulsionar o desenvolvimento territorial de forma
-          responsável, integrada e duradoura.
+          promovendo iniciativas...
         </>
       ),
       img: imgApresentation,
-      text: <></>,
+      labelButton: <>Continuar lendo</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -438,22 +443,70 @@ const content = {
       ctaButtonText: "A_Definir",
     },
     maps: {
-      minitag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      minitag: <>Roteiros que inspiram</>,
+      title: <>Mapa das nossas ações pelo turismo</>,
+      subtitle: (
+        <>Veja onde atuamos e como fortalecemos o turismo em cada território</>
+      ),
       embedsrc: <>A_Definir</>,
+    },
+    form: {
+      minitag: <>Banco de talentos</>,
+      title: <>Quer colaborar com a PLANITUR em projetos e ações técnicas?</>,
+      subtitle: (
+        <>
+          Cadastre-se em nosso banco de talentos, entraremos em contato sempre
+          que tivermos alguma oportunidade em vista!
+        </>
+      ),
     },
     about: {
       imagem: {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      miniTag: <>QUEM É A PLANITUR CONSULTORIA</>,
+      FirstPart: <span>Especialistas em Turismo Sustentável</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div></div>,
+      subtitle: (
+        <>
+          Conheça quem que transforma políticas, projetos e experiências em
+          turismo
+        </>
+      ),
+      paragraph: (
+        <div>
+          A PLANITUR é uma empresa socioambiental especializada na gestão e no
+          desenvolvimento de projetos em turismo, recreação, uso público em
+          áreas protegidas e desenvolvimento territorial. Atuamos em todo o
+          Brasil conectando pessoas, territórios e natureza para fortalecer
+          destinos e iniciativas que valorizem modos de vida em equilíbrio com a
+          conservação do meio ambiente, com foco em impacto positivo e
+          resultados duradouros.
+          <br />
+          <br />
+          Nosso propósito é fazer do turismo uma ferramenta de transformação
+          socioambiental, capaz de conservar a natureza, valorizar culturas
+          locais, fortalecer identidades e ampliar oportunidades para
+          comunidades e territórios. Acreditamos no turismo como um meio de
+          cuidado com os lugares e com as pessoas que os habitam.
+          <br />
+          <br />
+          Entregamos soluções que unem rigor técnico, sensibilidade territorial
+          e diálogo com os atores locais, orientadas por processos
+          participativos e pela construção de legados que permanecem além dos
+          projetos.
+          <br />
+          <br />
+          Atuamos com consultoria, assessoria, planejamento, curadoria,
+          pesquisa, instrutoria e capacitações, além do desenvolvimento e
+          implementação de projetos voltados ao turismo responsável e
+          sustentável. Também apoiamos instituições na estruturação de propostas
+          e captação de recursos, transformando boas ideias em projetos viáveis
+          e financiáveis.
+        </div>
+      ),
       imagemBg: aboutImgBg,
       benefits: {
         cards: {
@@ -504,9 +557,14 @@ const content = {
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>A_Definir</>,
+        miniTag: <>Redes sociais</>,
         title: <>Conecte-se conosco</>,
-        subtitle: <>A_Definir</>,
+        subtitle: (
+          <>
+            Acompanhe novidades, dicas e projetos que fortalecem o turismo em
+            nossos canais
+          </>
+        ),
         paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",

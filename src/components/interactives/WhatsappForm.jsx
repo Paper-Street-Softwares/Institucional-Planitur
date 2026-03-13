@@ -146,7 +146,7 @@ const WhatsappForm = () => {
               Nome completo:
             </label>
             <div className="flex text-primaryDark">
-              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
                 <User />
               </div>
               <input
@@ -166,7 +166,7 @@ const WhatsappForm = () => {
               Cidade / Estado:
             </label>
             <div className="flex text-primaryDark">
-              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
                 <MapPin />
               </div>
               <input
@@ -188,7 +188,7 @@ const WhatsappForm = () => {
               Telefone:
             </label>
             <div className="flex text-primaryDark">
-              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
                 <Phone />
               </div>
               <input
@@ -229,7 +229,7 @@ const WhatsappForm = () => {
               Email:
             </label>
             <div className="flex text-primaryDark">
-              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
                 <Mail />
               </div>
               <input
@@ -250,7 +250,7 @@ const WhatsappForm = () => {
               Área de atuação:
             </label>
             <div className="flex text-primaryDark">
-              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
                 <ListChecks />
               </div>
               <input
@@ -270,7 +270,7 @@ const WhatsappForm = () => {
               Breve resumo da experiência:
             </label>
             <div className="flex text-primaryDark">
-              <div className="flex items-start justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
+              <div className="flex items-start justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
                 <MessageCircle className="m-auto" />
               </div>
               <textarea
@@ -291,16 +291,26 @@ const WhatsappForm = () => {
         <label className="block font-medium mb-1 text-gray-400">
           Upload do currículo:
         </label>
-        <div className="flex text-primaryDark">
-          <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 shadow-md rounded-md">
-            <FileText />
+
+        <div className="flex flex-col tablet1:flex-row gap-2">
+          <div className="flex text-primaryDark items-center">
+            <div className="flex items-center justify-center w-12 py-2 bg-primaryDark/15 rounded-md">
+              <FileText />
+            </div>
+
+            <label className="ml-4 cursor-pointer bg-primaryDark text-white px-4 py-2 rounded-md">
+              Escolher arquivo
+              <input
+                type="file"
+                accept=".pdf,.doc,.docx"
+                className="hidden"
+                onChange={(e) => setResume(e.target.files[0])}
+              />
+            </label>
           </div>
-          <input
-            className="px-1 py-2 w-[90%] ml-4"
-            type="file"
-            accept=".pdf,.doc,.docx"
-            onChange={(e) => setResume(e.target.files[0])}
-          />
+          <p className="text-sm text-gray-400 mt-2">
+            {resume ? resume.name : "Nenhum arquivo escolhido"}
+          </p>
         </div>
       </div>
       {/* Botão */}

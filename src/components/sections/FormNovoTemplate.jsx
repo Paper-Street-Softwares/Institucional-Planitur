@@ -4,17 +4,22 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 import WhatsappForm from "../interactives/WhatsappForm";
 import content from "../../content/content";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function FormNovoTemplate() {
   return (
     <SectionArea className={`bg-secondary`}>
       <SectionWrapper>
         <SectionHeaderNovo
-          miniTitle=""
-          title="Quer colaborar com a PLANITUR em projetos e ações técnicas?"
-          subtitle=""
+          miniTitle={content.texts.form.minitag}
+          title={content.texts.form.title}
+          subtitle={content.texts.form.subtitle}
         />
-        <WhatsappForm />
+        <MotionDivDownToUp
+          className={`w-full phone3:max-w-[500px] tablet2:max-w-[700px] desktop1:max-w-[800px]`}
+        >
+          <WhatsappForm />
+        </MotionDivDownToUp>
       </SectionWrapper>
     </SectionArea>
   );

@@ -51,6 +51,7 @@ import TeamSection from "./Institucional/Team";
 import Footer from "./Institucional/Footer";
 import Apresentation from "./Institucional/Apresentation";
 import WhatsappForm from "../components/interactives/WhatsappForm";
+import Mapa from "../components/sections/Mapa";
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode();
@@ -62,6 +63,7 @@ export default function Index() {
         <main>
           <Hero />
           <About colorMode={colorMode} />
+          <Mapa />
           <FormNovoTemplate />
         </main>
         <Footer />

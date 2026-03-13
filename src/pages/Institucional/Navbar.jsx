@@ -90,10 +90,10 @@ function Navbar() {
     <div
       className={`bg-terciary fixed w-full z-50 ${mobileOpen ? "" : " border-b-2 border-[#C03D1A]"}`}
     >
-      <div className="max-w-[1215px] mx-auto px-0 ">
+      <div className="max-w-[1215px] mx-auto px-4 ">
         <div className="flex items-center justify-between pt-2 desktop1:py-2">
           {/* LOGO */}
-          <div className="w-[45%] py-2 tablet2:w-[20%] desktop1ex:w-[20%] ">
+          <div className="w-[45%] phone3:max-w-[158px] py-2 tablet2:w-[20%] desktop1ex:w-[20%] ">
             <Link to="/">
               <img
                 src={content.texts.navbar.logo.img}

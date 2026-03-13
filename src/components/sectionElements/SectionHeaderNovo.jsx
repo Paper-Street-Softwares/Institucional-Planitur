@@ -67,7 +67,7 @@ function SectionHeaderNovo({
   }
 
   if (type === "article") {
-    usage = `text-start mb-0 ${className || ""}`;
+    usage = `text-start mb-4 ${className || ""}`;
   } else {
     usage = `text-center mb-16 ${className || ""}`;
   }
