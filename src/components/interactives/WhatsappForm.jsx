@@ -145,8 +145,8 @@ const WhatsappForm = () => {
             <label className="block font-medium mb-1 text-gray-400">
               Nome completo:
             </label>
-            <div className="flex text-primaryDark">
-              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
+            <div className="flex text-primaryLight">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryLight/15 rounded-md">
                 <User />
               </div>
               <input
@@ -165,8 +165,8 @@ const WhatsappForm = () => {
             <label className="block font-medium mb-1 text-gray-400">
               Cidade / Estado:
             </label>
-            <div className="flex text-primaryDark">
-              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
+            <div className="flex text-primaryLight">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryLight/15 rounded-md">
                 <MapPin />
               </div>
               <input
@@ -187,8 +187,8 @@ const WhatsappForm = () => {
             <label className="block font-medium mb-1 text-gray-400">
               Telefone:
             </label>
-            <div className="flex text-primaryDark">
-              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
+            <div className="flex text-primaryLight">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryLight/15 rounded-md">
                 <Phone />
               </div>
               <input
@@ -228,8 +228,8 @@ const WhatsappForm = () => {
             <label className="block font-medium mb-1 text-gray-400">
               Email:
             </label>
-            <div className="flex text-primaryDark">
-              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
+            <div className="flex text-primaryLight">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryLight/15 rounded-md">
                 <Mail />
               </div>
               <input
@@ -249,8 +249,8 @@ const WhatsappForm = () => {
             <label className="block font-medium mb-1 text-gray-400">
               Área de atuação:
             </label>
-            <div className="flex text-primaryDark">
-              <div className="flex items-center justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
+            <div className="flex text-primaryLight">
+              <div className="flex items-center justify-center w-12 px-1 bg-primaryLight/15 rounded-md">
                 <ListChecks />
               </div>
               <input
@@ -269,12 +269,12 @@ const WhatsappForm = () => {
             <label className="block font-medium mb-1 text-gray-400">
               Breve resumo da experiência:
             </label>
-            <div className="flex text-primaryDark">
-              <div className="flex items-start justify-center w-12 px-1 bg-primaryDark/15 rounded-md">
+            <div className="flex text-primaryLight">
+              <div className="flex items-start justify-center w-12 px-1 bg-primaryLight/15 rounded-md">
                 <MessageCircle className="m-auto" />
               </div>
               <textarea
-                className="px-1 py-2 border-0 h-12 rounded-none border-b-2 border-black/30 w-[90%] bg-primaryDark/10 rounded-tl-md rounded-tr-md ml-4 text-black outline-none"
+                className="px-1 py-2 border-0 h-12 rounded-none border-b-2 border-black/30 w-[90%] bg-primaryLight/10 rounded-tl-md rounded-tr-md ml-4 text-black outline-none"
                 value={experience}
                 onChange={(e) => setExperience(e.target.value)}
                 // placeholder="Conte-nos sua experiência"
@@ -293,12 +293,12 @@ const WhatsappForm = () => {
         </label>
 
         <div className="flex flex-col tablet1:flex-row gap-2">
-          <div className="flex text-primaryDark items-center">
-            <div className="flex items-center justify-center w-12 py-2 bg-primaryDark/15 rounded-md">
+          <div className="flex text-primaryLight items-center">
+            <div className="flex items-center justify-center w-12 py-2 bg-primaryLight/15 rounded-md">
               <FileText />
             </div>
 
-            <label className="ml-4 cursor-pointer bg-primaryDark text-white px-4 py-2 rounded-md">
+            <label className="ml-4 cursor-pointer bg-primaryLight text-white px-4 py-2 rounded-md">
               Escolher arquivo
               <input
                 type="file"
@@ -318,7 +318,7 @@ const WhatsappForm = () => {
         <ButtonReflexo
           type="button"
           className="flex items-center w-fit text-white"
-          bgClass={`bg-primaryDark`}
+          bgClass={`bg-primaryLight`}
           onClick={sendToEmail}
           icon={<Mail width={18} />}
           disabled={isSubmitting}
