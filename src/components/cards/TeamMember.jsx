@@ -1,4 +1,11 @@
-import { Phone, Mail, Linkedin } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  Linkedin,
+  Book,
+  BookDown,
+  BookMarked,
+} from "lucide-react";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 export default function TeamMember({
@@ -10,9 +17,10 @@ export default function TeamMember({
   linkedIn,
   description,
   onOpenModal,
+  role,
 }) {
   return (
-    <div className="flex flex-col items-center text-center font-secondFont mx-auto p-4 h-full justify-between">
+    <div className="flex flex-col items-center text-center font-secondFont mx-auto p-4 h-full justify-between bg-primaryDark/5 rounded-md max-w-[400px]">
       {/* Foto */}
       <MotionDivDownToUp>
         <img
@@ -20,29 +28,21 @@ export default function TeamMember({
           alt={alt}
           width={260}
           height={260}
-          className="w-[260px] h-auto tablet2:w-[300px] desktop1:w-[170px] desktop2:w-[200px] rounded-full object-cover"
+          className="max-w-[260px] h-auto desktop1:w-[170px] desktop2:w-[200px] rounded-full object-cover"
         />
       </MotionDivDownToUp>
 
       {/* Nome */}
       <MotionDivDownToUp>
-        <h2 className="mt-6 text-[16px] font-medium text-primaryDark">
+        <h2 className="mt-4 text-[16px] font-medium text-primaryDark">
           {name}
         </h2>
+        <p className="text-sm text-primaryDark/80 mx-auto">{role}</p>
       </MotionDivDownToUp>
       {/* Botão para abrir modal */}
       <MotionDivDownToUp
         className={` flex flex-col items-center justify-center`}
       >
-        {description && (
-          <button
-            onClick={() => onOpenModal(description)}
-            className="mt-3 px-4 py-2 text-sm border border-primaryDark text-primaryDark rounded-full hover:bg-primaryDark hover:text-white transition"
-          >
-            Ver mais
-          </button>
-        )}
-
         {/* Telefone */}
         {phone && (
           <div className="flex items-center gap-2 font-light text-sm mt-3 text-gray-600">
@@ -59,12 +59,30 @@ export default function TeamMember({
           </div>
         )}
 
-        {/* LinkedIn */}
-        {linkedIn && (
-          <a className="p-3" href={linkedIn} target="_blank" rel="noreferrer">
-            <Linkedin size={24} />
-          </a>
-        )}
+        <div className="flex gap-4 items-center mt-2">
+          {description && (
+            <button
+              onClick={() => onOpenModal(description)}
+              className="mt-3 px-4 py-2 text-sm border bg-primaryDark text-white rounded-full hover:scale-90 transition-all duration-500 flex gap-2 items-center outline-none"
+            >
+              <span>
+                <BookMarked width={18} />
+              </span>{" "}
+              Ver mais
+            </button>
+          )}
+          {/* LinkedIn */}
+          {linkedIn && (
+            <a
+              href={linkedIn}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-4 bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
+            >
+              <Linkedin size={18} className="text-primaryDark" />
+            </a>
+          )}
+        </div>
       </MotionDivDownToUp>
     </div>
   );

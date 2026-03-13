@@ -36,7 +36,7 @@ function ConteudoTeam({ colorMode }) {
         </MotionDivDownToUp>
       </section>
 
-      <SectionArea className={`bg-terciary`} paddingbot={false}>
+      <SectionArea className={`bg-terciary`}>
         <SectionHeaderNovo
           title={content.texts.team.title}
           subtitle={content.texts.team.subtitle}
@@ -45,12 +45,13 @@ function ConteudoTeam({ colorMode }) {
         />
 
         <SectionWrapper>
-          <div className="mx-auto px-4 md:px-0 my-10">
-            <div className="flex flex-wrap gap-6 tablet2:gap-12 desktop1:gap-[0%]">
+          <div className="mx-auto px-4 md:px-0 my-10 ">
+            <div className="grid tablet1:grid-cols-2 justify-center items-start flex-wrap gap-6 tablet2:gap-4 desktop1:gap-2">
               <MotionDivDownToUp>
                 <TeamMember
                   img={content.texts.team.cards.card1.img}
                   name={content.texts.team.cards.card1.name}
+                  role={content.texts.team.cards.card1.role}
                   linkedIn={content.texts.team.cards.card1.linkedIn}
                   description={content.texts.team.cards.card1.description}
                   onOpenModal={openDescription}
@@ -61,6 +62,7 @@ function ConteudoTeam({ colorMode }) {
                 <TeamMember
                   img={content.texts.team.cards.card2.img}
                   name={content.texts.team.cards.card2.name}
+                  role={content.texts.team.cards.card2.role}
                   linkedIn={content.texts.team.cards.card2.linkedIn}
                   description={content.texts.team.cards.card2.description}
                   onOpenModal={openDescription}

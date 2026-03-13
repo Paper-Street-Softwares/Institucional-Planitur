@@ -36,10 +36,16 @@ function MainApp() {
         <Routes>
           <Route path="/" element={<Index mode={mode} />} />
           <Route path="/about" element={<RouteAbout colorMode={colorMode} />} />
-          <Route path="/contato" element={<RouteContato />} />
-          <Route path="/team" element={<RouteTeam />} />
+          <Route
+            path="/contato"
+            element={<RouteContato colorMode={colorMode} />}
+          />
+          <Route path="/team" element={<RouteTeam colorMode={colorMode} />} />
 
-          <Route path="/features" element={<RoutesFeatures />}>
+          <Route
+            path="/features"
+            element={<RoutesFeatures colorMode={colorMode} />}
+          >
             <Route index element={<Features1 />} />
             <Route path="tecnicocursivo" element={<Features1 />} />
             <Route path="formativoeducacional" element={<Features2 />} />
