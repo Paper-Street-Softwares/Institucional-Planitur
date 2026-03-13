@@ -43,10 +43,31 @@ export default function Footer() {
                 <h3 className="text-primaryLight font-semibold mb-3">
                   SOBRE NÓS
                 </h3>
-                <ul className="space-y-2 text-primaryDark/80">
-                  <li>Carreira</li>
-                  <li>Contato</li>
-                  <li>Nosso Escritório</li>
+                <ul className="space-y-2 text-sm text-primaryDark/80 flex flex-col">
+                  <a
+                    href="/about"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primaryLight duration-300 transition-all cursor-pointer"
+                  >
+                    Nosso Escritório
+                  </a>
+                  <a
+                    href="/team"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primaryLight duration-300 transition-all cursor-pointer"
+                  >
+                    Nossa Equipe
+                  </a>
+                  <a
+                    href="/contato"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primaryLight duration-300 transition-all cursor-pointer"
+                  >
+                    Contato
+                  </a>
                 </ul>
               </div>
 

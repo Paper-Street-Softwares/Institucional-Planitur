@@ -20,7 +20,8 @@ export default function TeamMember({
   role,
 }) {
   return (
-    <div className="flex flex-col items-center text-center font-secondFont mx-auto p-4 h-full justify-between bg-primaryDark/5 rounded-md max-w-[400px]">
+    <div className="flex flex-col items-center text-center font-secondFont mx-auto p-4 h-full bg-primaryDark/5 rounded-md max-w-[400px]">
+      {" "}
       {/* Foto */}
       <MotionDivDownToUp>
         <img
@@ -28,10 +29,9 @@ export default function TeamMember({
           alt={alt}
           width={260}
           height={260}
-          className="max-w-[260px] h-auto desktop1:w-[170px] desktop2:w-[200px] rounded-full object-cover"
+          className="max-w-[300px] w-[90%] mx-auto h-auto rounded-full object-cover"
         />
       </MotionDivDownToUp>
-
       {/* Nome */}
       <MotionDivDownToUp>
         <h2 className="mt-4 text-[16px] font-medium text-primaryDark">
@@ -40,9 +40,7 @@ export default function TeamMember({
         <p className="text-sm text-primaryDark/80 mx-auto">{role}</p>
       </MotionDivDownToUp>
       {/* Botão para abrir modal */}
-      <MotionDivDownToUp
-        className={` flex flex-col items-center justify-center`}
-      >
+      <MotionDivDownToUp className="flex flex-col items-center justify-center mt-auto">
         {/* Telefone */}
         {phone && (
           <div className="flex items-center gap-2 font-light text-sm mt-3 text-gray-600">

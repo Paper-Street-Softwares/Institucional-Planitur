@@ -45,7 +45,7 @@ function ConteudoTeam({ colorMode }) {
         />
 
         <SectionWrapper>
-          <div className="mx-auto px-4 md:px-0 my-10 ">
+          <div className="mx-auto md:px-0 my-10 ">
             <div className="grid tablet1:grid-cols-2 justify-center items-start flex-wrap gap-6 tablet2:gap-4 desktop1:gap-2">
               <MotionDivDownToUp>
                 <TeamMember
