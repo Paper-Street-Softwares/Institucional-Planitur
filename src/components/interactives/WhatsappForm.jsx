@@ -154,7 +154,7 @@ const WhatsappForm = () => {
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Nome completo"
+                placeholder="Seu Nome completo"
               />
             </div>
             {errors.name && <p className="text-red-500 mt-2">{errors.name}</p>}
@@ -237,7 +237,7 @@ const WhatsappForm = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="E-mail"
+                placeholder="Seu E-mail"
               />
             </div>
             {errors.email && (

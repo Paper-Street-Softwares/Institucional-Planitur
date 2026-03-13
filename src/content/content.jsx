@@ -219,11 +219,13 @@ const content = {
               desenvolvimento sustentável. Essas soluções buscam compreender de
               forma aprofundada os contextos locais, identificar desafios e
               potencialidades, e orientar a formulação de estratégias mais
-              eficientes e integradas. A partir de metodologias consolidadas e
-              análise de dados, contribuem para o aprimoramento da tomada de
-              decisão, a organização de iniciativas institucionais e a
-              construção de caminhos consistentes para o desenvolvimento
-              econômico, social e institucional dos territórios.
+              eficientes e integradas.
+              <br />
+              <br />A partir de metodologias consolidadas e análise de dados,
+              contribuem para o aprimoramento da tomada de decisão, a
+              organização de iniciativas institucionais e a construção de
+              caminhos consistentes para o desenvolvimento econômico, social e
+              institucional dos territórios.
             </div>
           ),
           icon: <Briefcase />,
@@ -242,13 +244,14 @@ const content = {
               meio de cursos, oficinas e processos formativos. As iniciativas
               são estruturadas para fortalecer habilidades técnicas, gerenciais
               e estratégicas, estimulando a autonomia, a inovação e a capacidade
-              de adaptação diante dos desafios contemporâneos. A partir de
-              metodologias participativas e conteúdos alinhados às demandas do
-              mercado e da sociedade, os processos formativos promovem
-              aprendizado prático, troca de experiências e construção coletiva
-              de conhecimento. Dessa forma, contribuem para o aprimoramento
-              profissional, o fortalecimento institucional e o desenvolvimento
-              sustentável de territórios e organizações.
+              de adaptação diante dos desafios contemporâneos.
+              <br />
+              <br />A partir de metodologias participativas e conteúdos
+              alinhados às demandas do mercado e da sociedade, os processos
+              formativos promovem aprendizado prático, troca de experiências e
+              construção coletiva de conhecimento. Dessa forma, contribuem para
+              o aprimoramento profissional, o fortalecimento institucional e o
+              desenvolvimento sustentável de territórios e organizações.
             </div>
           ),
           icon: <User />,
@@ -268,12 +271,13 @@ const content = {
               indicadores e produção técnica. Esse eixo busca transformar
               informações em conhecimento útil para orientar estratégias,
               avaliar resultados e aprimorar processos de gestão e planejamento.
-              A partir de metodologias de pesquisa, análise de dados e produção
-              de evidências, são elaborados diagnósticos, relatórios técnicos e
-              instrumentos de monitoramento capazes de apoiar gestores,
-              instituições e territórios na tomada de decisões mais consistentes
-              e fundamentadas. Dessa forma, a investigação aplicada contribui
-              para ampliar a compreensão sobre realidades específicas,
+              <br />
+              <br />A partir de metodologias de pesquisa, análise de dados e
+              produção de evidências, são elaborados diagnósticos, relatórios
+              técnicos e instrumentos de monitoramento capazes de apoiar
+              gestores, instituições e territórios na tomada de decisões mais
+              consistentes e fundamentadas. Dessa forma, a investigação aplicada
+              contribui para ampliar a compreensão sobre realidades específicas,
               identificar tendências e subsidiar a formulação de políticas e
               iniciativas mais eficazes e alinhadas às necessidades sociais e
               institucionais.
